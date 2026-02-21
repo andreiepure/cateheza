@@ -18,9 +18,22 @@
 function phaseController() {
     return {
         phase: 'learn',
+        quizUnlocked: false,
+
+        init() {
+            // Hotspot activities have no sequential constraint — unlock quiz immediately.
+            // Slide activities set data-quiz-gated and unlock only after slides-completed.
+            if (!this.$el.dataset.quizGated) {
+                this.quizUnlocked = true;
+            }
+        },
+
+        unlockQuiz() {
+            this.quizUnlocked = true;
+        },
 
         startQuiz() {
-            this.phase = 'quiz';
+            if (this.quizUnlocked) this.phase = 'quiz';
         },
 
         setLearnPhase() {
@@ -28,7 +41,7 @@ function phaseController() {
         },
 
         setQuizPhase() {
-            this.phase = 'quiz';
+            if (this.quizUnlocked) this.phase = 'quiz';
         },
     };
 }
@@ -105,6 +118,7 @@ function slideViewer() {
     return {
         slides: [],
         currentIndex: 0,
+        seenLast: false,
 
         init() {
             const el = document.getElementById('learn-data');
@@ -114,6 +128,11 @@ function slideViewer() {
                 this.slides = Array.isArray(data.slides) ? data.slides : [];
             } catch (e) {
                 console.error('slideViewer: failed to parse learn data', e);
+            }
+
+            // Single-slide activity: already at last slide on load.
+            if (this.slides.length > 0 && this.isLast) {
+                this.reachedEnd();
             }
 
             // Keyboard: left/right arrow navigation
@@ -141,7 +160,10 @@ function slideViewer() {
         },
 
         next() {
-            if (!this.isLast) this.currentIndex++;
+            if (!this.isLast) {
+                this.currentIndex++;
+                if (this.isLast) this.reachedEnd();
+            }
         },
 
         prev() {
@@ -150,6 +172,16 @@ function slideViewer() {
 
         goTo(index) {
             this.currentIndex = Math.max(0, Math.min(this.slides.length - 1, index));
+            if (this.isLast) this.reachedEnd();
+        },
+
+        // Called the first time the user reaches the last slide.
+        // Dispatches slides-completed so phaseController can unlock the quiz.
+        reachedEnd() {
+            if (!this.seenLast) {
+                this.seenLast = true;
+                this.$dispatch('slides-completed');
+            }
         },
 
         // Aria label for dot nav buttons (no inline string concat in CSP build).

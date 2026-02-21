@@ -31,9 +31,16 @@ $title = t($meta['title_key'] ?? '');
 
     <h1 class="h2 fw-bold mb-4"><?= h($title) ?></h1>
 
+    <?php $learnType = $learnData['type'] ?? 'hotspots'; ?>
+
     <!-- Phase tabs (Alpine driven) -->
-    <!-- @start-quiz.window listens for the event dispatched from the nested hotspotViewer -->
-    <div x-data="phaseController" @start-quiz.window="startQuiz">
+    <!-- @start-quiz.window   — dispatched by nested viewers to switch phase          -->
+    <!-- @slides-completed.window — dispatched by slideViewer when last slide reached -->
+    <!-- data-quiz-gated       — present on slide activities; quiz starts locked       -->
+    <div x-data="phaseController"
+         @start-quiz.window="startQuiz"
+         @slides-completed.window="unlockQuiz"
+         <?php if ($learnType === 'slides'): ?>data-quiz-gated="1"<?php endif; ?>>
 
         <!-- Tab switcher -->
         <div class="phase-tabs" role="tablist">
@@ -48,6 +55,7 @@ $title = t($meta['title_key'] ?? '');
             <button class="phase-tab"
                     :class="{ active: phase === 'quiz' }"
                     @click="setQuizPhase"
+                    :disabled="!quizUnlocked"
                     role="tab"
                     :aria-selected="phase === 'quiz'"
                     id="tab-quiz">
@@ -65,8 +73,6 @@ $title = t($meta['title_key'] ?? '');
             <script type="application/json" id="learn-data">
                 <?= json_encode($learnData, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?>
             </script>
-
-            <?php $learnType = $learnData['type'] ?? 'hotspots'; ?>
 
             <?php if ($learnType === 'slides'): ?>
             <!-- ── SLIDE VIEWER ─────────────────────────────── -->
@@ -119,10 +125,11 @@ $title = t($meta['title_key'] ?? '');
                     <span x-text="displayCurrentIndex"></span> / <span x-text="slides.length"></span>
                 </p>
 
-                <!-- Start quiz CTA -->
+                <!-- Start quiz CTA — enabled only after reaching the last slide -->
                 <div class="text-center mt-2">
                     <button class="btn btn-success btn-lg"
-                            @click="requestQuiz">
+                            @click="requestQuiz"
+                            :disabled="!seenLast">
                         <?= h(t('activity.start_quiz')) ?>
                     </button>
                 </div>
