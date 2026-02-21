@@ -22,20 +22,20 @@ if (!defined('BASEPATH')) {
             $slug      = h($meta['slug'] ?? '');
             $title     = h(t($meta['title_key'] ?? ''));
             $desc      = h(t($meta['description_key'] ?? ''));
-            $thumbnail = h($meta['thumbnail'] ?? '');
+            $thumbRel  = $meta['thumbnail'] ?? '';
+            $thumbnail = h($thumbRel);
+            $hasThumbnail = $thumbRel !== '' && file_exists(BASEPATH . '/' . $thumbRel);
             $ready     = !empty($meta['ready']);
             $actUrl    = h(APP_URL) . '/activity.php?slug=' . $slug;
         ?>
         <div class="col">
             <div class="card activity-card h-100<?= $ready ? '' : ' activity-card--wip' ?>">
                 <div class="position-relative">
-                <?php if (!empty($thumbnail)): ?>
+                <?php if ($hasThumbnail): ?>
                 <img src="<?= h(APP_URL) ?>/<?= $thumbnail ?>"
                      alt="<?= $title ?>"
                      class="card-img-top"
-                     loading="lazy"
-                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-                <div class="card-img-placeholder" style="display:none" aria-hidden="true">✝</div>
+                     loading="lazy">
                 <?php else: ?>
                 <div class="card-img-placeholder" aria-hidden="true">✝</div>
                 <?php endif; ?>

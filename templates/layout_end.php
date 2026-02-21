@@ -19,11 +19,11 @@ if (!defined('BASEPATH')) {
 <!-- Bootstrap 5.3.8 JS Bundle (local) -->
 <script src="<?= h(APP_URL) ?>/assets/js/bootstrap.bundle.min.js"></script>
 
-<!-- Alpine.js 3.15.8 (local, defer) -->
-<script defer src="<?= h(APP_URL) ?>/assets/js/alpine.min.js"></script>
+<!-- Custom JS (Alpine components — must be registered before Alpine initialises) -->
+<script defer src="<?= h(APP_URL) ?>/assets/js/app.js"></script>
 
-<!-- Custom JS (Alpine components) -->
-<script src="<?= h(APP_URL) ?>/assets/js/app.js"></script>
+<!-- Alpine.js 3.15.8 (local, defer — must come after app.js so alpine:init fires after components are registered) -->
+<script defer src="<?= h(APP_URL) ?>/assets/js/alpine.min.js"></script>
 
 </body>
 </html>
