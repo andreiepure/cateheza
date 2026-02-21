@@ -25,3 +25,5 @@ node_modules/
 # Deployment artifacts
 *.zip
 *.tar.gz
+.infomaniak-maintenance.html
+.user.ini
