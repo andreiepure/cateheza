@@ -22,10 +22,10 @@ $currentLocale = $translator->getLocale();
     <meta name="description" content="<?= h(t('site.tagline')) ?>">
 
     <!-- Bootstrap 5.3.8 CSS (local) -->
-    <link href="<?= h(APP_URL) ?>/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= h(APP_URL) ?>/assets/css/bootstrap.min.css?v=<?= filemtime(BASEPATH . '/assets/css/bootstrap.min.css') ?>" rel="stylesheet">
 
     <!-- Custom styles -->
-    <link rel="stylesheet" href="<?= h(APP_URL) ?>/assets/css/app.css">
+    <link rel="stylesheet" href="<?= h(APP_URL) ?>/assets/css/app.css?v=<?= filemtime(BASEPATH . '/assets/css/app.css') ?>">
 </head>
 <body class="<?= $bodyClass ?>">
 
