@@ -50,9 +50,9 @@ RewriteRule (^|/)\. - [F,L]
     Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
 
     # Content Security Policy
-    # script-src: self + CDN domains (no unsafe-inline)
-    # style-src: self + CDN (Bootstrap uses inline styles via JS — allow 'unsafe-inline' for styles only)
-    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://cdn.jsdelivr.net 'unsafe-inline'; img-src 'self' data:; font-src 'self' https://cdn.jsdelivr.net; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';"
+    # All JS/CSS assets are served locally. The @alpinejs/csp build avoids eval()
+    # and new Function(), so 'unsafe-eval' is not needed. No CDN domains required.
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';"
 
     # Remove server information
     Header always unset X-Powered-By

@@ -21,12 +21,8 @@ $currentLocale = $translator->getLocale();
     <title><?= $pageTitle ?><?= h(t('site.title')) ?></title>
     <meta name="description" content="<?= h(t('site.tagline')) ?>">
 
-    <!-- Bootstrap 5.3.8 CSS -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-        crossorigin="anonymous">
+    <!-- Bootstrap 5.3.8 CSS (local) -->
+    <link href="<?= h(APP_URL) ?>/assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles -->
     <link rel="stylesheet" href="<?= h(APP_URL) ?>/assets/css/app.css">

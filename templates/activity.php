@@ -33,13 +33,13 @@ $title = t($meta['title_key'] ?? '');
 
     <!-- Phase tabs (Alpine driven) -->
     <!-- @start-quiz.window listens for the event dispatched from the nested hotspotViewer -->
-    <div x-data="{ phase: 'learn' }" @start-quiz.window="phase = 'quiz'">
+    <div x-data="phaseController" @start-quiz.window="startQuiz">
 
         <!-- Tab switcher -->
         <div class="phase-tabs" role="tablist">
             <button class="phase-tab"
                     :class="{ active: phase === 'learn' }"
-                    @click="phase = 'learn'"
+                    @click="setLearnPhase"
                     role="tab"
                     :aria-selected="phase === 'learn'"
                     id="tab-learn">
@@ -47,7 +47,7 @@ $title = t($meta['title_key'] ?? '');
             </button>
             <button class="phase-tab"
                     :class="{ active: phase === 'quiz' }"
-                    @click="phase = 'quiz'"
+                    @click="setQuizPhase"
                     role="tab"
                     :aria-selected="phase === 'quiz'"
                     id="tab-quiz">
@@ -70,7 +70,7 @@ $title = t($meta['title_key'] ?? '');
 
             <?php if ($learnType === 'slides'): ?>
             <!-- ── SLIDE VIEWER ─────────────────────────────── -->
-            <div x-data="slideViewer()">
+            <div x-data="slideViewer">
                 <p class="text-muted small mb-3"><?= h(t('activity.slide_instruction')) ?></p>
 
                 <div class="slide-card mb-3" style="max-width: 600px; margin: 0 auto;">
@@ -103,7 +103,7 @@ $title = t($meta['title_key'] ?? '');
                                     @click="goTo(i)"
                                     role="tab"
                                     :aria-selected="i === currentIndex"
-                                    :aria-label="(i + 1) + ' / ' + slides.length">
+                                    :aria-label="dotAriaLabel(i)">
                             </button>
                         </template>
                     </div>
@@ -116,13 +116,13 @@ $title = t($meta['title_key'] ?? '');
                 </div>
 
                 <p class="text-center text-muted small mb-4">
-                    <span x-text="currentIndex + 1"></span> / <span x-text="slides.length"></span>
+                    <span x-text="displayCurrentIndex"></span> / <span x-text="slides.length"></span>
                 </p>
 
                 <!-- Start quiz CTA -->
                 <div class="text-center mt-2">
                     <button class="btn btn-success btn-lg"
-                            @click="$dispatch('start-quiz')">
+                            @click="requestQuiz">
                         <?= h(t('activity.start_quiz')) ?>
                     </button>
                 </div>
@@ -130,7 +130,7 @@ $title = t($meta['title_key'] ?? '');
 
             <?php else: ?>
             <!-- ── HOTSPOT VIEWER ────────────────────────────── -->
-            <div x-data="hotspotViewer()">
+            <div x-data="hotspotViewer">
                 <p class="text-muted mb-3"><?= h(t('activity.learn_instruction')) ?></p>
 
                 <!-- Image + hotspot pins -->
@@ -157,7 +157,7 @@ $title = t($meta['title_key'] ?? '');
                             :aria-label="'<?= h(t('activity.learn_phase')) ?> ' + (i + 1)"
                             :title="spot.title_key"
                             x-show="imageLoaded">
-                            <span x-text="i + 1" aria-hidden="true"></span>
+                            <span x-text="hotspotNumber(i)" aria-hidden="true"></span>
                         </button>
                     </template>
                 </div>
@@ -191,7 +191,7 @@ $title = t($meta['title_key'] ?? '');
                 <!-- Start quiz CTA -->
                 <div class="text-center mt-4">
                     <button class="btn btn-success btn-lg"
-                            @click="$dispatch('start-quiz')">
+                            @click="requestQuiz">
                         <?= h(t('activity.start_quiz')) ?>
                     </button>
                 </div>
@@ -210,7 +210,7 @@ $title = t($meta['title_key'] ?? '');
                 <?= json_encode($quizData, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?>
             </script>
 
-            <div x-data="quizEngine()"
+            <div x-data="quizEngine"
                  data-post-url="<?= h($postUrl) ?>"
                  data-csrf-token="<?= h($csrfToken) ?>"
                  data-activity-slug="<?= h($slug) ?>"
@@ -239,7 +239,7 @@ $title = t($meta['title_key'] ?? '');
                     </div>
                     <p class="text-muted small mb-3">
                         <span x-text="labels.question"></span>
-                        <span x-text="currentIndex + 1"></span>
+                        <span x-text="quizDisplayIndex"></span>
                         <span x-text="labels.of"></span>
                         <span x-text="questions.length"></span>
                     </p>

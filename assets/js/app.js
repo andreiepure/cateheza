@@ -1,10 +1,37 @@
 /**
  * Orthodox Catechesis — Alpine.js Components
  *
+ * IMPORTANT: Uses the @alpinejs/csp build.
+ * - No eval(), no new Function(), no new AsyncFunction().
+ * - All components MUST be registered via Alpine.data().
+ * - x-data attributes must use registered names only (no inline objects).
+ * - Event handlers must reference named methods (no inline assignments).
+ *
  * Components:
- *  - hotspotViewer()  — interactive image with clickable hotspot pins
- *  - quizEngine()     — multi-question quiz with server-side answer checking
+ *  - phaseController — learn/quiz phase tab switcher (activity page outer wrapper)
+ *  - hotspotViewer   — interactive image with clickable hotspot pins
+ *  - slideViewer     — slide-through image+text viewer
+ *  - quizEngine      — multi-question quiz with server-side answer checking
  */
+
+/* ── phaseController ────────────────────────────────────── */
+function phaseController() {
+    return {
+        phase: 'learn',
+
+        startQuiz() {
+            this.phase = 'quiz';
+        },
+
+        setLearnPhase() {
+            this.phase = 'learn';
+        },
+
+        setQuizPhase() {
+            this.phase = 'quiz';
+        },
+    };
+}
 
 /* ── hotspotViewer ──────────────────────────────────────── */
 function hotspotViewer() {
@@ -57,7 +84,19 @@ function hotspotViewer() {
 
         onImageLoad() {
             this.imageLoaded = true;
-        }
+        },
+
+        // Dispatch event to parent phaseController to switch to quiz phase.
+        // Named method required by the @alpinejs/csp build (no inline $dispatch calls).
+        requestQuiz() {
+            this.$dispatch('start-quiz');
+        },
+
+        // Returns the 1-based display number for a hotspot pin.
+        // Named getter required by the @alpinejs/csp build (no inline arithmetic).
+        hotspotNumber(i) {
+            return i + 1;
+        },
     };
 }
 
@@ -96,6 +135,11 @@ function slideViewer() {
             return this.currentIndex === this.slides.length - 1;
         },
 
+        // 1-based display index for x-text (no inline arithmetic in CSP build).
+        get displayCurrentIndex() {
+            return this.currentIndex + 1;
+        },
+
         next() {
             if (!this.isLast) this.currentIndex++;
         },
@@ -106,6 +150,16 @@ function slideViewer() {
 
         goTo(index) {
             this.currentIndex = Math.max(0, Math.min(this.slides.length - 1, index));
+        },
+
+        // Aria label for dot nav buttons (no inline string concat in CSP build).
+        dotAriaLabel(i) {
+            return (i + 1) + ' / ' + this.slides.length;
+        },
+
+        // Dispatch event to parent phaseController to switch to quiz phase.
+        requestQuiz() {
+            this.$dispatch('start-quiz');
         },
     };
 }
@@ -190,6 +244,11 @@ function quizEngine() {
             if (pct >= 1)   return this.labels.excellent;
             if (pct >= 0.5) return this.labels.good;
             return this.labels.tryAgain;
+        },
+
+        // 1-based display index for x-text (no inline arithmetic in CSP build).
+        get quizDisplayIndex() {
+            return this.currentIndex + 1;
         },
 
         selectChoice(key) {
@@ -287,3 +346,13 @@ function quizEngine() {
         },
     };
 }
+
+/* ── Register all components with Alpine ────────────────── */
+// Must use the alpine:init event so components are registered before Alpine
+// processes the DOM. Required by the @alpinejs/csp build.
+document.addEventListener('alpine:init', () => {
+    Alpine.data('phaseController', phaseController);
+    Alpine.data('hotspotViewer',   hotspotViewer);
+    Alpine.data('slideViewer',     slideViewer);
+    Alpine.data('quizEngine',      quizEngine);
+});
