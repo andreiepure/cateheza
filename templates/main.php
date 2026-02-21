@@ -23,10 +23,12 @@ if (!defined('BASEPATH')) {
             $title     = h(t($meta['title_key'] ?? ''));
             $desc      = h(t($meta['description_key'] ?? ''));
             $thumbnail = h($meta['thumbnail'] ?? '');
+            $ready     = !empty($meta['ready']);
             $actUrl    = h(APP_URL) . '/activity.php?slug=' . $slug;
         ?>
         <div class="col">
-            <div class="card activity-card h-100">
+            <div class="card activity-card h-100<?= $ready ? '' : ' activity-card--wip' ?>">
+                <div class="position-relative">
                 <?php if (!empty($thumbnail)): ?>
                 <img src="<?= h(APP_URL) ?>/<?= $thumbnail ?>"
                      alt="<?= $title ?>"
@@ -37,13 +39,19 @@ if (!defined('BASEPATH')) {
                 <?php else: ?>
                 <div class="card-img-placeholder" aria-hidden="true">✝</div>
                 <?php endif; ?>
+                <?php if (!$ready): ?>
+                <span class="badge bg-secondary position-absolute top-0 end-0 m-2">
+                    <?= h(t('main.coming_soon')) ?>
+                </span>
+                <?php endif; ?>
+                </div>
 
                 <div class="card-body d-flex flex-column">
                     <h2 class="card-title h5 fw-bold"><?= $title ?></h2>
                     <p class="card-text text-muted small flex-grow-1"><?= $desc ?></p>
                     <a href="<?= $actUrl ?>"
-                       class="btn btn-primary btn-sm mt-2 stretched-link">
-                        <?= h(t('main.start_activity')) ?>
+                       class="btn <?= $ready ? 'btn-primary' : 'btn-secondary' ?> btn-sm mt-2 stretched-link">
+                        <?= h(t($ready ? 'main.start_activity' : 'main.coming_soon')) ?>
                     </a>
                 </div>
             </div>

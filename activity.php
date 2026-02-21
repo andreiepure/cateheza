@@ -106,6 +106,20 @@ try {
     exit;
 }
 
+// Show work-in-progress page for activities not yet ready
+if (empty($meta['ready'])) {
+    $pageTitle = t($meta['title_key'] ?? '');
+    require __DIR__ . '/templates/layout.php';
+    echo '<div class="container mt-5 text-center">'
+        . '<div class="mb-4" style="font-size:3rem">🚧</div>'
+        . '<h1 class="h3 fw-bold mb-3">' . h(t('errors.wip_title')) . '</h1>'
+        . '<p class="text-muted mb-4">' . h(t('errors.wip_body')) . '</p>'
+        . '<a href="' . h(APP_URL) . '/main.php" class="btn btn-primary">' . h(t('main.back')) . '</a>'
+        . '</div>';
+    require __DIR__ . '/templates/layout_end.php';
+    exit;
+}
+
 // Translate learn data server-side (hotspots or slides)
 if (isset($learnData['hotspots']) && is_array($learnData['hotspots'])) {
     foreach ($learnData['hotspots'] as &$spot) {

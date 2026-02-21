@@ -20,7 +20,9 @@
     "title": "Activități",
     "subtitle": "Alege o activitate pentru a învăța",
     "start_activity": "Începe activitatea",
-    "loading": "Se încarcă..."
+    "loading": "Se încarcă...",
+    "coming_soon": "În pregătire",
+    "back": "Înapoi la activități"
   },
   "activity": {
     "learn_phase": "Descoperă",
@@ -55,7 +57,9 @@
     "csrf_invalid": "Sesiunea a expirat. Te rugăm să reîncerci.",
     "rate_limit": "Prea multe cereri. Așteaptă un moment.",
     "not_found": "Pagina nu a fost găsită.",
-    "server_error": "A apărut o eroare. Te rugăm să reîncerci."
+    "server_error": "A apărut o eroare. Te rugăm să reîncerci.",
+    "wip_title": "Activitate în pregătire",
+    "wip_body": "Această activitate este în curs de pregătire. Revino curând!"
   },
   "activities": {
     "final-judgement": {

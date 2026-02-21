@@ -20,7 +20,9 @@
     "title": "Activités",
     "subtitle": "Choisissez une activité pour apprendre",
     "start_activity": "Commencer l'activité",
-    "loading": "Chargement..."
+    "loading": "Chargement...",
+    "coming_soon": "En préparation",
+    "back": "Retour aux activités"
   },
   "activity": {
     "learn_phase": "Découvrir",
@@ -55,7 +57,9 @@
     "csrf_invalid": "La session a expiré. Veuillez réessayer.",
     "rate_limit": "Trop de requêtes. Attendez un moment.",
     "not_found": "Page introuvable.",
-    "server_error": "Une erreur est survenue. Veuillez réessayer."
+    "server_error": "Une erreur est survenue. Veuillez réessayer.",
+    "wip_title": "Activité en préparation",
+    "wip_body": "Cette activité est en cours de préparation. Revenez bientôt !"
   },
   "activities": {
     "final-judgement": {
