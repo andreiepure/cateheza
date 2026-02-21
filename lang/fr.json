@@ -198,29 +198,7 @@
       "title": "Qu'est-ce que l'Église ?",
       "description": "Découvrez ce qu'est vraiment l'Église Orthodoxe et pourquoi elle fait partie de notre vie.",
       "learn": {
-        "image_alt": "Qu'est-ce que l'Église Orthodoxe"
-      },
-      "hotspots": {
-        "1": {
-          "title": "Le Corps du Christ",
-          "body": "La communauté de tous les chrétiens baptisés forme le Corps du Christ — c'est l'Église ! Chacun de nous en est un membre vivant."
-        },
-        "2": {
-          "title": "Une institution",
-          "body": "L'Église est aussi une institution : les prêtres et les évêques la dirigent et célèbrent les Sacrements (Baptême, Eucharistie, Confession et les autres)."
-        },
-        "3": {
-          "title": "Les saints et les fidèles",
-          "body": "Les saints au ciel et les personnes sur terre prient ensemble — nous formons une seule famille dans le Christ, unis par la foi et l'amour."
-        },
-        "4": {
-          "title": "Lieu de prière",
-          "body": "Le lieu où nous nous rassemblons pour prier et pour la Divine Liturgie s'appelle aussi 'église'. C'est là que nous rencontrons Dieu ensemble."
-        },
-        "5": {
-          "title": "La petite Église",
-          "body": "La famille chrétienne est la 'petite Église'. Les parents et les enfants qui prient ensemble forment une petite Église à la maison, dans l'amour et la foi."
-        }
+        "image_alt": "Une église orthodoxe"
       },
       "quiz": {
         "q1": {
@@ -246,6 +224,28 @@
             "b": "Dans la nef",
             "c": "Sur les marches"
           }
+        }
+      },
+      "slides": {
+        "1": {
+          "image_alt": "Une église orthodoxe",
+          "body": "La communauté de tous les chrétiens baptisés forme le Corps du Christ = l'Église."
+        },
+        "2": {
+          "image_alt": "Une église orthodoxe",
+          "body": "Une institution (prêtres, évêques)"
+        },
+        "3": {
+          "image_alt": "Une église orthodoxe",
+          "body": "Les saints et les personnes sur terre qui prient ensemble"
+        },
+        "4": {
+          "image_alt": "Une église orthodoxe",
+          "body": "Le lieu où nous prions"
+        },
+        "5": {
+          "image_alt": "Une église orthodoxe",
+          "body": "La famille chrétienne est la petite église"
         }
       }
     },

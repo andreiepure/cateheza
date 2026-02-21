@@ -198,29 +198,7 @@
       "title": "Ce Este Biserica?",
       "description": "Descoperă ce este cu adevărat Biserica Ortodoxă și de ce face parte din viața noastră.",
       "learn": {
-        "image_alt": "Ce este Biserica Ortodoxă"
-      },
-      "hotspots": {
-        "1": {
-          "title": "Trupul lui Hristos",
-          "body": "Comunitatea tuturor creștinilor botezați formează Trupul lui Hristos — aceasta este Biserica! Fiecare dintre noi este un mădular viu al acestui Trup."
-        },
-        "2": {
-          "title": "O instituție",
-          "body": "Biserica este și o instituție: preoții și episcopii o conduc și săvârșesc Sfintele Taine (Botez, Euharistie, Spovedanie și celelalte)."
-        },
-        "3": {
-          "title": "Sfinții și credincioșii",
-          "body": "Sfinții din cer și oamenii de pe pământ se roagă împreună — suntem o singură familie în Hristos, legați prin credință și iubire."
-        },
-        "4": {
-          "title": "Locul de rugăciune",
-          "body": "Locul unde ne adunăm pentru rugăciune și Sfânta Liturghie se numește și el 'biserică'. Acolo Îl întâlnim pe Dumnezeu împreună."
-        },
-        "5": {
-          "title": "Biserica cea mică",
-          "body": "Familia creștină este 'biserica cea mică'. Părinții și copiii care se roagă împreună formează o mică Biserică acasă, în iubire și credință."
-        }
+        "image_alt": "O biserică ortodoxă"
       },
       "quiz": {
         "q1": {
@@ -246,6 +224,28 @@
             "b": "În naos",
             "c": "Pe trepte"
           }
+        }
+      },
+      "slides": {
+        "1": {
+          "image_alt": "O biserică ortodoxă",
+          "body": "Comunitatea tuturor creștinilor botezați formează Trupul lui Hristos = Biserica."
+        },
+        "2": {
+          "image_alt": "O biserică ortodoxă",
+          "body": "O instituție (preoți, episcopi)"
+        },
+        "3": {
+          "image_alt": "O biserică ortodoxă",
+          "body": "Sfinții și oamenii de pe pământ care se roagă împreună"
+        },
+        "4": {
+          "image_alt": "O biserică ortodoxă",
+          "body": "Locul unde ne rugăm"
+        },
+        "5": {
+          "image_alt": "O biserică ortodoxă",
+          "body": "Familia creștină este biserica cea mică"
         }
       }
     },
