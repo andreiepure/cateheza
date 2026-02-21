@@ -196,26 +196,30 @@
     },
     "ce-este-biserica": {
       "title": "Qu'est-ce que l'Église ?",
-      "description": "Découvrez les parties de l'église orthodoxe et leur signification spirituelle.",
+      "description": "Découvrez ce qu'est vraiment l'Église Orthodoxe et pourquoi elle fait partie de notre vie.",
       "learn": {
-        "image_alt": "Plan d'une église orthodoxe"
+        "image_alt": "Qu'est-ce que l'Église Orthodoxe"
       },
       "hotspots": {
         "1": {
-          "title": "Le sanctuaire (autel)",
-          "body": "Le sanctuaire est le lieu le plus sacré de l'église, où est célébrée la Divine Liturgie. L'autel (sainte table) s'y trouve, où est offert le Sacrifice eucharistique."
+          "title": "Le Corps du Christ",
+          "body": "La communauté de tous les chrétiens baptisés forme le Corps du Christ — c'est l'Église ! Chacun de nous en est un membre vivant."
         },
         "2": {
-          "title": "L'iconostase",
-          "body": "L'iconostase est le mur d'icônes qui sépare le sanctuaire de la nef. Par les Portes Royales, le prêtre sort vers les fidèles avec les Saints Mystères."
+          "title": "Une institution",
+          "body": "L'Église est aussi une institution : les prêtres et les évêques la dirigent et célèbrent les Sacrements (Baptême, Eucharistie, Confession et les autres)."
         },
         "3": {
-          "title": "La nef",
-          "body": "La nef est l'endroit où se tiennent les fidèles pendant les offices. Les hommes se tiennent généralement à droite, les femmes à gauche."
+          "title": "Les saints et les fidèles",
+          "body": "Les saints au ciel et les personnes sur terre prient ensemble — nous formons une seule famille dans le Christ, unis par la foi et l'amour."
         },
         "4": {
-          "title": "Le narthex",
-          "body": "Le narthex est l'entrée de l'église, là où autrefois se tenaient ceux qui se préparaient au Baptême."
+          "title": "Lieu de prière",
+          "body": "Le lieu où nous nous rassemblons pour prier et pour la Divine Liturgie s'appelle aussi 'église'. C'est là que nous rencontrons Dieu ensemble."
+        },
+        "5": {
+          "title": "La petite Église",
+          "body": "La famille chrétienne est la 'petite Église'. Les parents et les enfants qui prient ensemble forment une petite Église à la maison, dans l'amour et la foi."
         }
       },
       "quiz": {

@@ -196,26 +196,30 @@
     },
     "ce-este-biserica": {
       "title": "Ce Este Biserica?",
-      "description": "Descoperă părțile bisericii ortodoxe și semnificația lor spirituală.",
+      "description": "Descoperă ce este cu adevărat Biserica Ortodoxă și de ce face parte din viața noastră.",
       "learn": {
-        "image_alt": "Planul unei biserici ortodoxe"
+        "image_alt": "Ce este Biserica Ortodoxă"
       },
       "hotspots": {
         "1": {
-          "title": "Altarul",
-          "body": "Altarul este cel mai sfânt loc al bisericii, unde se săvârșește Sfânta Liturghie. Acolo se află Sfânta Masă pe care se aduce Jertfa euharistică."
+          "title": "Trupul lui Hristos",
+          "body": "Comunitatea tuturor creștinilor botezați formează Trupul lui Hristos — aceasta este Biserica! Fiecare dintre noi este un mădular viu al acestui Trup."
         },
         "2": {
-          "title": "Catapeteasma (Iconostasul)",
-          "body": "Catapeteasma este peretele de icoane care desparte altarul de naos. Prin Ușile Împărătești, preotul iese la credincioși cu Sfintele Taine."
+          "title": "O instituție",
+          "body": "Biserica este și o instituție: preoții și episcopii o conduc și săvârșesc Sfintele Taine (Botez, Euharistie, Spovedanie și celelalte)."
         },
         "3": {
-          "title": "Naosul",
-          "body": "Naosul este locul unde stau credincioșii la sfintele slujbe. Bărbații stau de obicei în dreapta, femeile în stânga."
+          "title": "Sfinții și credincioșii",
+          "body": "Sfinții din cer și oamenii de pe pământ se roagă împreună — suntem o singură familie în Hristos, legați prin credință și iubire."
         },
         "4": {
-          "title": "Pronaosul",
-          "body": "Pronaosul este intrarea în biserică, locul unde odinioară stăteau cei care se pregăteau pentru Botez."
+          "title": "Locul de rugăciune",
+          "body": "Locul unde ne adunăm pentru rugăciune și Sfânta Liturghie se numește și el 'biserică'. Acolo Îl întâlnim pe Dumnezeu împreună."
+        },
+        "5": {
+          "title": "Biserica cea mică",
+          "body": "Familia creștină este 'biserica cea mică'. Părinții și copiii care se roagă împreună formează o mică Biserică acasă, în iubire și credință."
         }
       },
       "quiz": {
