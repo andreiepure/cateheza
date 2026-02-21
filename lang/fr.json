@@ -106,6 +106,46 @@
             "b": "Vivre dans la foi et les bonnes œuvres",
             "c": "Avoir peur tout le temps"
           }
+        },
+        "q4": {
+          "question": "Que devais-tu faire pour celui qui avait faim, selon le commandement de Jésus ?",
+          "choices": {
+            "a": "Prier pour lui",
+            "b": "Lui donner à manger",
+            "c": "L'envoyer à l'église"
+          }
+        },
+        "q5": {
+          "question": "Que devais-tu faire pour celui qui était nu (sans vêtements) ?",
+          "choices": {
+            "a": "Lui conseiller de travailler",
+            "b": "Prier pour qu'il trouve des vêtements",
+            "c": "Le vêtir"
+          }
+        },
+        "q6": {
+          "question": "Que devais-tu faire pour celui qui était en prison, selon le Jugement Dernier ?",
+          "choices": {
+            "a": "Aller lui rendre visite",
+            "b": "Prier pour lui depuis chez toi",
+            "c": "L'oublier"
+          }
+        },
+        "q7": {
+          "question": "Combien de commandements de miséricorde Jésus nous a-t-il donnés lors du Jugement Dernier ?",
+          "choices": {
+            "a": "Trois",
+            "b": "Six",
+            "c": "Dix"
+          }
+        },
+        "q8": {
+          "question": "Quand tu aides le plus petit des frères de Jésus, qui aides-tu en réalité ?",
+          "choices": {
+            "a": "Un homme ordinaire",
+            "b": "Un saint",
+            "c": "Jésus lui-même"
+          }
         }
       },
       "slides": {

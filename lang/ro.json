@@ -106,6 +106,46 @@
             "b": "Să trăim în credință și fapte bune",
             "c": "Să ne temem tot timpul"
           }
+        },
+        "q4": {
+          "question": "Ce trebuia să faci pentru cel flămând, conform poruncii lui Iisus?",
+          "choices": {
+            "a": "Să te rogi pentru el",
+            "b": "Să îi dai de mâncare",
+            "c": "Să îl trimiți la biserică"
+          }
+        },
+        "q5": {
+          "question": "Ce trebuia să faci pentru cel gol (fără haine)?",
+          "choices": {
+            "a": "Să îl sfătuiești să muncească",
+            "b": "Să te rogi să găsească haine",
+            "c": "Să îl îmbraci"
+          }
+        },
+        "q6": {
+          "question": "Ce trebuia să faci pentru cel din temniță, conform Judecății de Apoi?",
+          "choices": {
+            "a": "Să mergi să îl vizitezi",
+            "b": "Să te rogi pentru el de acasă",
+            "c": "Să uiți de el"
+          }
+        },
+        "q7": {
+          "question": "Câte porunci de milostenie ne-a dat Iisus la Judecata de Apoi?",
+          "choices": {
+            "a": "Trei",
+            "b": "Șase",
+            "c": "Zece"
+          }
+        },
+        "q8": {
+          "question": "Când ajuți pe cel mai mic dintre frații lui Iisus, pe cine ajuți de fapt?",
+          "choices": {
+            "a": "Un om obișnuit",
+            "b": "Un sfânt",
+            "c": "Pe Iisus însuși"
+          }
         }
       },
       "slides": {
