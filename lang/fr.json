@@ -242,27 +242,43 @@
       },
       "quiz": {
         "q1": {
-          "question": "Où est célébrée la Divine Liturgie dans l'église ?",
+          "question": "Que forme la communauté de tous les chrétiens baptisés ?",
           "choices": {
-            "a": "Dans la nef",
-            "b": "Dans le sanctuaire",
-            "c": "Dans le narthex"
+            "a": "Un État chrétien",
+            "b": "Le Corps du Christ = l'Église",
+            "c": "Une simple association"
           }
         },
         "q2": {
-          "question": "Qu'est-ce que l'iconostase ?",
+          "question": "Qui fait partie de la direction de l'Église en tant qu'institution ?",
           "choices": {
-            "a": "Un grand lustre",
-            "b": "Le mur d'icônes entre le sanctuaire et la nef",
-            "c": "La cloche de l'église"
+            "a": "Le maire et les conseillers locaux",
+            "b": "Les enseignants et les directeurs",
+            "c": "Les prêtres et les évêques"
           }
         },
         "q3": {
-          "question": "Où se tiennent les fidèles pendant l'office ?",
+          "question": "Qui prie ensemble dans l'Église du Christ ?",
           "choices": {
-            "a": "Dans le sanctuaire",
-            "b": "Dans la nef",
-            "c": "Sur les marches"
+            "a": "Seulement les personnes sur terre",
+            "b": "Les saints au ciel et les personnes sur terre",
+            "c": "Seulement les prêtres et les moines"
+          }
+        },
+        "q4": {
+          "question": "Le bâtiment où nous allons prier ensemble s'appelle...",
+          "choices": {
+            "a": "Une église",
+            "b": "Une mairie",
+            "c": "Une école"
+          }
+        },
+        "q5": {
+          "question": "Comment s'appelle la famille chrétienne dans la vie de l'Église ?",
+          "choices": {
+            "a": "Une grande communauté paroissiale",
+            "b": "Une paroisse",
+            "c": "La petite Église"
           }
         }
       },

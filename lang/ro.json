@@ -242,27 +242,43 @@
       },
       "quiz": {
         "q1": {
-          "question": "Unde se săvârșește Sfânta Liturghie în biserică?",
+          "question": "Ce formează comunitatea tuturor creștinilor botezați?",
           "choices": {
-            "a": "În naos",
-            "b": "În altar",
-            "c": "În pronaos"
+            "a": "Un stat creștin",
+            "b": "Trupul lui Hristos = Biserica",
+            "c": "O asociație obișnuită"
           }
         },
         "q2": {
-          "question": "Ce este catapeteasma?",
+          "question": "Cine face parte din conducerea Bisericii ca instituție?",
           "choices": {
-            "a": "Un candelabru mare",
-            "b": "Peretele de icoane dintre altar și naos",
-            "c": "Clopotul bisericii"
+            "a": "Primarul și consilierii locali",
+            "b": "Profesorii și directorii",
+            "c": "Preoții și episcopii"
           }
         },
         "q3": {
-          "question": "Unde stau credincioșii în timpul slujbei?",
+          "question": "Cine se roagă împreună în Biserica lui Hristos?",
           "choices": {
-            "a": "În altar",
-            "b": "În naos",
-            "c": "Pe trepte"
+            "a": "Numai oamenii de pe pământ",
+            "b": "Sfinții din cer și oamenii de pe pământ",
+            "c": "Numai preoții și călugării"
+          }
+        },
+        "q4": {
+          "question": "Clădirea unde mergem să ne rugăm împreună se numește...",
+          "choices": {
+            "a": "Biserică",
+            "b": "Primărie",
+            "c": "Școală"
+          }
+        },
+        "q5": {
+          "question": "Cum se numește familia creștină în viața Bisericii?",
+          "choices": {
+            "a": "Comunitate parohială mare",
+            "b": "Parohie",
+            "c": "Biserica cea mică"
           }
         }
       },
