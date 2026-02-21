@@ -1,0 +1,810 @@
+{
+  "site": {
+    "title": "Cateheză Ortodoxă",
+    "tagline": "Jocuri interactive pentru copii"
+  },
+  "nav": {
+    "home": "Acasă",
+    "activities": "Activități",
+    "language": "Limbă"
+  },
+  "landing": {
+    "welcome": "Bine ai venit!",
+    "subtitle": "Alege limba ta pentru a începe",
+    "choose_language": "Alege limba",
+    "ro": "Română",
+    "fr": "Franceză",
+    "start": "Începe"
+  },
+  "main": {
+    "title": "Activități",
+    "subtitle": "Alege o activitate pentru a învăța",
+    "start_activity": "Începe activitatea",
+    "loading": "Se încarcă..."
+  },
+  "activity": {
+    "learn_phase": "Descoperă",
+    "quiz_phase": "Testează-te",
+    "learn_title": "Explorează imaginea",
+    "learn_instruction": "Apasă pe punctele colorate pentru a afla mai multe.",
+    "close": "Închide",
+    "next": "Următorul",
+    "previous": "Anterior",
+    "question": "Întrebarea",
+    "of": "din",
+    "submit": "Trimite",
+    "correct": "Corect!",
+    "incorrect": "Încearcă din nou!",
+    "next_question": "Următoarea întrebare",
+    "finish": "Termină",
+    "score": "Scorul tău",
+    "score_label": "răspunsuri corecte din",
+    "retry": "Încearcă din nou",
+    "back_to_activities": "Înapoi la activități",
+    "phase_learn": "Învață",
+    "phase_quiz": "Quiz",
+    "start_quiz": "Începe quiz-ul",
+    "slide_instruction": "Apasă săgețile pentru a naviga între imagini.",
+    "result_excellent": "Excelent! Ai răspuns corect la toate întrebările!",
+    "result_good": "Bine! Ai răspuns corect la majoritatea întrebărilor.",
+    "result_try_again": "Mai exersează! Poți face mai bine."
+  },
+  "errors": {
+    "invalid_slug": "Activitate inexistentă.",
+    "invalid_lang": "Limbă nesupportată.",
+    "csrf_invalid": "Sesiunea a expirat. Te rugăm să reîncerci.",
+    "rate_limit": "Prea multe cereri. Așteaptă un moment.",
+    "not_found": "Pagina nu a fost găsită.",
+    "server_error": "A apărut o eroare. Te rugăm să reîncerci."
+  },
+  "activities": {
+    "final-judgement": {
+      "title": "Judecata de Apoi",
+      "description": "Descoperă ce ne învață credința ortodoxă despre Judecata de Apoi.",
+      "learn": {
+        "image_alt": "Icoana Judecății de Apoi"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Iisus Hristos, Judecătorul",
+          "body": "La Judecata de Apoi, Iisus Hristos va judeca toată omenirea. El vine cu slavă și putere cerească."
+        },
+        "2": {
+          "title": "Îngerii",
+          "body": "Îngerii adună sufletele înaintea tronului lui Dumnezeu și cântă slavă Lui."
+        },
+        "3": {
+          "title": "Drepții — Raiul",
+          "body": "Cei care au trăit în credință și fapte bune moștenesc Împărăția cerurilor."
+        },
+        "4": {
+          "title": "Cei osândiți",
+          "body": "Cei care au refuzat iubirea lui Dumnezeu și nu s-au pocăit se despart de El."
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Cine va judeca omenirea la Judecata de Apoi?",
+          "choices": {
+            "a": "Dumnezeu Tatăl",
+            "b": "Iisus Hristos",
+            "c": "Arhanghelul Mihail"
+          }
+        },
+        "q2": {
+          "question": "Ce vor moșteni cei drepți la Judecata de Apoi?",
+          "choices": {
+            "a": "Bogăție pământească",
+            "b": "Împărăția cerurilor",
+            "c": "Putere lumească"
+          }
+        },
+        "q3": {
+          "question": "Ce ne îndeamnă Judecata de Apoi să facem în viața aceasta?",
+          "choices": {
+            "a": "Să fim bogați",
+            "b": "Să trăim în credință și fapte bune",
+            "c": "Să ne temem tot timpul"
+          }
+        }
+      },
+      "slides": {
+        "1": {
+          "image_alt": "Icoana lui Iisus Hristos",
+          "body": "Astăzi vom vorbi despre cum Iisus, Fiul lui Dumnezeu, ne va judeca după cum ne-am purtat cu ceilalți oameni."
+        },
+        "2": {
+          "image_alt": "Cel flămând primind hrană",
+          "body": "«Flămând am fost și Mi-ați dat să mănânc»"
+        },
+        "3": {
+          "image_alt": "Cel însetat primind apă",
+          "body": "«Însetat am fost și Mi-ați dat să beau»"
+        },
+        "4": {
+          "image_alt": "Primirea celui străin",
+          "body": "«Străin am fost și M-ați primit»"
+        },
+        "5": {
+          "image_alt": "Îmbrăcarea celui gol",
+          "body": "«Gol am fost și M-ați îmbrăcat»"
+        },
+        "6": {
+          "image_alt": "Vizitarea celui bolnav",
+          "body": "«Bolnav am fost și M-ați cercetat»"
+        },
+        "7": {
+          "image_alt": "Vizitarea celui din temniță",
+          "body": "«În temniță am fost și ați venit la Mine»"
+        },
+        "8": {
+          "image_alt": "Icoana lui Iisus Hristos",
+          "body": "☝️ Când facem bine unui om, îi facem bine lui Dumnezeu!"
+        }
+      }
+    },
+    "intampinarea-domnului": {
+      "title": "Întâmpinarea Domnului",
+      "description": "Află povestea prezentării Pruncului Iisus la Templul din Ierusalim.",
+      "learn": {
+        "image_alt": "Icoana Întâmpinării Domnului"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Dreptul Simeon",
+          "body": "Bătrânul Simeon așteptase toată viața să vadă pe Mântuitorul. Duhul Sfânt îi promisese că nu va muri înainte de a-L vedea pe Hristos."
+        },
+        "2": {
+          "title": "Proorocița Ana",
+          "body": "Ana, proorociță în vârstă, slujea în Templu zi și noapte cu post și rugăciune. Ea a vestit tuturor că Mântuitorul a venit."
+        },
+        "3": {
+          "title": "Maica Domnului și Pruncul Iisus",
+          "body": "Fecioara Maria și Iosif L-au adus pe Pruncul Iisus la Templu conform Legii lui Moise, la 40 de zile de la naștere."
+        },
+        "4": {
+          "title": "Templul din Ierusalim",
+          "body": "Templul era locul sfânt al lui Dumnezeu. Acolo se aduceau jertfe și rugăciuni poporului Israel."
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Cum se numea bătrânul care L-a primit pe Iisus la Templu?",
+          "choices": {
+            "a": "Iosif",
+            "b": "Simeon",
+            "c": "Zaharia"
+          }
+        },
+        "q2": {
+          "question": "Ce a spus Simeon despre Iisus?",
+          "choices": {
+            "a": "Că va fi un mare împărat",
+            "b": "Că este lumina spre luminarea neamurilor",
+            "c": "Că va fi preot în Templu"
+          }
+        },
+        "q3": {
+          "question": "La câte zile după naștere a fost adus Iisus la Templu?",
+          "choices": {
+            "a": "La 7 zile",
+            "b": "La 40 de zile",
+            "c": "La un an"
+          }
+        }
+      }
+    },
+    "ce-este-biserica": {
+      "title": "Ce Este Biserica?",
+      "description": "Descoperă părțile bisericii ortodoxe și semnificația lor spirituală.",
+      "learn": {
+        "image_alt": "Planul unei biserici ortodoxe"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Altarul",
+          "body": "Altarul este cel mai sfânt loc al bisericii, unde se săvârșește Sfânta Liturghie. Acolo se află Sfânta Masă pe care se aduce Jertfa euharistică."
+        },
+        "2": {
+          "title": "Catapeteasma (Iconostasul)",
+          "body": "Catapeteasma este peretele de icoane care desparte altarul de naos. Prin Ușile Împărătești, preotul iese la credincioși cu Sfintele Taine."
+        },
+        "3": {
+          "title": "Naosul",
+          "body": "Naosul este locul unde stau credincioșii la sfintele slujbe. Bărbații stau de obicei în dreapta, femeile în stânga."
+        },
+        "4": {
+          "title": "Pronaosul",
+          "body": "Pronaosul este intrarea în biserică, locul unde odinioară stăteau cei care se pregăteau pentru Botez."
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Unde se săvârșește Sfânta Liturghie în biserică?",
+          "choices": {
+            "a": "În naos",
+            "b": "În altar",
+            "c": "În pronaos"
+          }
+        },
+        "q2": {
+          "question": "Ce este catapeteasma?",
+          "choices": {
+            "a": "Un candelabru mare",
+            "b": "Peretele de icoane dintre altar și naos",
+            "c": "Clopotul bisericii"
+          }
+        },
+        "q3": {
+          "question": "Unde stau credincioșii în timpul slujbei?",
+          "choices": {
+            "a": "În altar",
+            "b": "În naos",
+            "c": "Pe trepte"
+          }
+        }
+      }
+    },
+    "pilda-semanatorului": {
+      "title": "Pilda Semănătorului",
+      "description": "Înțelege pilda spusă de Iisus despre semănătorul și diferitele tipuri de pământ.",
+      "learn": {
+        "image_alt": "Icoana Pildei Semănătorului"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Semănătorul",
+          "body": "Semănătorul reprezintă pe Iisus Hristos sau pe orice propovăduitor al Cuvântului lui Dumnezeu."
+        },
+        "2": {
+          "title": "Sămânța pe cale",
+          "body": "Sămânța căzută pe cale reprezintă cel care aude Cuvântul, dar vine diavolul și ia ceea ce s-a semănat în inima lui."
+        },
+        "3": {
+          "title": "Sămânța pe loc stâncos",
+          "body": "Sămânța pe stâncă înseamnă cel care primește Cuvântul cu bucurie, dar nu are rădăcini adânci și cade la prima ispită."
+        },
+        "4": {
+          "title": "Pământul bun",
+          "body": "Pământul bun este inima care aude, înțelege și păstrează Cuvântul lui Dumnezeu, aducând rod însutit."
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Ce reprezintă sămânța din pilda semănătorului?",
+          "choices": {
+            "a": "Grâul de mâncare",
+            "b": "Cuvântul lui Dumnezeu",
+            "c": "Faptele bune"
+          }
+        },
+        "q2": {
+          "question": "Ce reprezintă pământul bun?",
+          "choices": {
+            "a": "Un câmp fertil",
+            "b": "Inima care primește și păstrează Cuvântul lui Dumnezeu",
+            "c": "O grădină frumoasă"
+          }
+        },
+        "q3": {
+          "question": "De ce nu crește sămânța pe loc stâncos?",
+          "choices": {
+            "a": "Pentru că nu are apă",
+            "b": "Pentru că nu are rădăcini adânci și se usucă",
+            "c": "Pentru că vine vântul"
+          }
+        }
+      }
+    },
+    "saint-nektarios": {
+      "title": "Sfântul Nectarie de Eghina",
+      "description": "Descoperă viața și minunile Sfântului Nectarie, sfântul tămăduitor.",
+      "learn": {
+        "image_alt": "Icoana Sfântului Nectarie de Eghina"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Sfântul Nectarie",
+          "body": "Sfântul Nectarie (1846–1920) a fost mitropolit și a fondat o mânăstire pe insula Eghina. Este cinstit ca mare tămăduitor."
+        },
+        "2": {
+          "title": "Mânăstirea din Eghina",
+          "body": "Sfântul Nectarie a construit mânăstirea Sfânta Treime pe insula Eghina, Grecia, unde și-a petrecut ultimii ani de viață."
+        },
+        "3": {
+          "title": "Vindecările miraculoase",
+          "body": "Sfântul Nectarie este cunoscut pentru numeroasele vindecări pe care le-a săvârșit, atât în viață cât și după moarte, prin rugăciunile celor credincioși."
+        },
+        "4": {
+          "title": "Moaștele sfântului",
+          "body": "Moaștele Sfântului Nectarie se păstrează la mânăstirea din Eghina și izvorăsc mir, aducând vindecare celor care le cinstesc cu credință."
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Pe ce insulă a trăit Sfântul Nectarie?",
+          "choices": {
+            "a": "Creta",
+            "b": "Eghina",
+            "c": "Cipru"
+          }
+        },
+        "q2": {
+          "question": "Pentru ce este cunoscut îndeosebi Sfântul Nectarie?",
+          "choices": {
+            "a": "Ca mare scriitor",
+            "b": "Ca tămăduitor și făcător de minuni",
+            "c": "Ca general creștin"
+          }
+        },
+        "q3": {
+          "question": "Când a trăit Sfântul Nectarie?",
+          "choices": {
+            "a": "În secolul IV",
+            "b": "În secolul XV",
+            "c": "În secolele XIX–XX"
+          }
+        }
+      }
+    },
+    "sfintii-arhangheli": {
+      "title": "Sfinții Arhangheli",
+      "description": "Învață despre arhanghelii lui Dumnezeu — Mihail, Gavriil și Rafael.",
+      "learn": {
+        "image_alt": "Icoana Sfinților Arhangheli"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Arhanghelul Mihail",
+          "body": "Mihail înseamnă 'Cine este ca Dumnezeu?'. El este căpetenia oștilor cerești și apărătorul credincioșilor împotriva forțelor răului."
+        },
+        "2": {
+          "title": "Arhanghelul Gavriil",
+          "body": "Gavriil înseamnă 'Puterea lui Dumnezeu'. El este vestitor al voinței divine și a adus Bunăvestirea Fecioarei Maria."
+        },
+        "3": {
+          "title": "Arhanghelul Rafael",
+          "body": "Rafael înseamnă 'Tămăduirea lui Dumnezeu'. El este ocrotitorul călătorilor și tămăduitor, cunoscut din cartea lui Tobie."
+        },
+        "4": {
+          "title": "Cetele îngerești",
+          "body": "Îngerii sunt ființe spirituale create de Dumnezeu. Ei Îl slăvesc neîncetat și sunt mesagerii și ocrotitorii oamenilor."
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Care arhanghel i-a vestit Fecioarei Maria că va naște pe Fiul lui Dumnezeu?",
+          "choices": {
+            "a": "Mihail",
+            "b": "Gavriil",
+            "c": "Rafael"
+          }
+        },
+        "q2": {
+          "question": "Ce înseamnă numele arhanghelului Mihail?",
+          "choices": {
+            "a": "Puterea lui Dumnezeu",
+            "b": "Cine este ca Dumnezeu?",
+            "c": "Tămăduirea lui Dumnezeu"
+          }
+        },
+        "q3": {
+          "question": "Ce sunt îngerii?",
+          "choices": {
+            "a": "Oameni desăvârșiți",
+            "b": "Ființe spirituale create de Dumnezeu",
+            "c": "Sufletele sfinților"
+          }
+        }
+      }
+    },
+    "sfanta-parascheva": {
+      "title": "Sfânta Parascheva",
+      "description": "Descoperă viața Sfintei Parascheva, ocrotitoarea Moldovei.",
+      "learn": {
+        "image_alt": "Icoana Sfintei Parascheva"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Sfânta Parascheva",
+          "body": "Sfânta Parascheva a trăit în secolul XI în Tracia (Balcani). De mică a ales viața de asceză și rugăciune, renunțând la bogățiile familiei."
+        },
+        "2": {
+          "title": "Moaștele sfintei la Iași",
+          "body": "Moaștele Sfintei Parascheva se păstrează la Catedrala Mitropolitană din Iași și sunt cinstite de milioane de pelerini în fiecare an."
+        },
+        "3": {
+          "title": "Pelerinajul de la Iași",
+          "body": "Pe 14 octombrie, de ziua sfintei, zeci de mii de credincioși vin la Iași să se închine la moaștele ei și să ceară mijlocirea ei."
+        },
+        "4": {
+          "title": "Viața de asceză",
+          "body": "Sfânta Parascheva a trăit o viață de post, rugăciune și milostenie. A ajutat pe săraci și a slujit lui Dumnezeu cu toată inima."
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Unde se păstrează moaștele Sfintei Parascheva?",
+          "choices": {
+            "a": "La București",
+            "b": "La Iași",
+            "c": "La Cluj-Napoca"
+          }
+        },
+        "q2": {
+          "question": "De unde era Sfânta Parascheva?",
+          "choices": {
+            "a": "Din Moldova",
+            "b": "Din Tracia (Balcani)",
+            "c": "Din Franța"
+          }
+        },
+        "q3": {
+          "question": "Când este ziua Sfintei Parascheva?",
+          "choices": {
+            "a": "Pe 14 octombrie",
+            "b": "Pe 25 decembrie",
+            "c": "Pe 1 ianuarie"
+          }
+        }
+      }
+    },
+    "sf-dimitrie": {
+      "title": "Sfântul Dimitrie Izvorâtorul de Mir",
+      "description": "Descoperă viața martirică a Sfântului Dimitrie din Tesalonic.",
+      "learn": {
+        "image_alt": "Icoana Sfântului Dimitrie Izvorâtorul de Mir"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Sfântul Dimitrie",
+          "body": "Sfântul Dimitrie a trăit în secolul IV în Tesalonic. A fost ostaș creștin și propovăduitor al credinței, pentru care a suferit martiriul."
+        },
+        "2": {
+          "title": "Cetatea Tesalonicului",
+          "body": "Sfântul Dimitrie este ocrotitorul orașului Tesalonic (Salonic) din Grecia. A apărat cetatea de multe ori prin mijlocirile sale minunate."
+        },
+        "3": {
+          "title": "Mirul sfânt",
+          "body": "Moaștele Sfântului Dimitrie izvorăsc mir sfânt, care are putere tămăduitoare. De aceea este supranumit 'Izvorâtorul de Mir'."
+        },
+        "4": {
+          "title": "Mucenicia",
+          "body": "Sfântul Dimitrie a fost ucis din porunca împăratului Maximian pentru că era creștin și propovăduia credința."
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Din ce oraș era Sfântul Dimitrie?",
+          "choices": {
+            "a": "Atena",
+            "b": "Tesalonic",
+            "c": "Constantinopol"
+          }
+        },
+        "q2": {
+          "question": "De ce este numit 'Izvorâtorul de Mir'?",
+          "choices": {
+            "a": "Pentru că a produs ulei de măsline",
+            "b": "Pentru că moaștele sale izvorăsc mir sfânt tămăduitor",
+            "c": "Pentru că a fost parfumier"
+          }
+        },
+        "q3": {
+          "question": "Când trăit Sfântul Dimitrie?",
+          "choices": {
+            "a": "În secolul II",
+            "b": "În secolul IV",
+            "c": "În secolul X"
+          }
+        }
+      }
+    },
+    "bogatul-nemilostic": {
+      "title": "Bogatul și Lazăr",
+      "description": "Înțelege pilda despre bogatul nemilostiv și săracul Lazăr.",
+      "learn": {
+        "image_alt": "Icoana Pildei Bogatului și a lui Lazăr"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Bogatul",
+          "body": "Bogatul se îmbrăca în porfiră și vison și ospăta în fiecare zi cu fast. Nu i-a păsat de sărmanul Lazăr de la poarta lui."
+        },
+        "2": {
+          "title": "Lazăr cel sărac",
+          "body": "Lazăr zăcea la poarta bogatului, plin de răni, dorind să se sature din firimiturile ce cădeau de la masa lui."
+        },
+        "3": {
+          "title": "Sânul lui Avraam",
+          "body": "După moarte, Lazăr a fost dus de îngeri în sânul lui Avraam — locul de odihnă al drepților, plin de mângâiere și pace."
+        },
+        "4": {
+          "title": "Prăpastia",
+          "body": "Între bogatul din iad și Lazăr din sânul lui Avraam era o prăpastie mare, semn că soarta sufletelor se hotărăște în această viață."
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Cum a trăit Lazăr pe pământ?",
+          "choices": {
+            "a": "În bogăție și fericire",
+            "b": "În sărăcie și suferință",
+            "c": "Ca preot în Templu"
+          }
+        },
+        "q2": {
+          "question": "Unde a ajuns Lazăr după moarte?",
+          "choices": {
+            "a": "În iad",
+            "b": "În sânul lui Avraam",
+            "c": "Pe un munte înalt"
+          }
+        },
+        "q3": {
+          "question": "Ce ne învață această pildă?",
+          "choices": {
+            "a": "Că bogăția este întotdeauna un păcat",
+            "b": "Că milostenia și grija față de aproapele sunt esențiale",
+            "c": "Că toți oamenii vor suferi"
+          }
+        }
+      }
+    },
+    "botezul-domnului": {
+      "title": "Botezul Domnului",
+      "description": "Descoperă evenimentul Botezului lui Iisus în râul Iordan de către Ioan.",
+      "learn": {
+        "image_alt": "Icoana Botezului Domnului (Teofania)"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Iisus în râul Iordan",
+          "body": "Iisus a venit din Galileea la Iordan, la Ioan, ca să Se boteze de el. Ioan s-a împotrivit, zicând că el are nevoie să fie botezat de Iisus."
+        },
+        "2": {
+          "title": "Ioan Botezătorul",
+          "body": "Ioan Botezătorul propovăduia pocăința și boteza oamenii în Iordan. El a pregătit calea pentru venirea lui Mesia."
+        },
+        "3": {
+          "title": "Duhul Sfânt ca porumbel",
+          "body": "Când Iisus a ieșit din apă, cerul s-a deschis și Duhul lui Dumnezeu S-a coborât ca un porumbel, poposindu-Se peste El."
+        },
+        "4": {
+          "title": "Glasul Tatălui",
+          "body": "Un glas din cer a rostit: 'Acesta este Fiul Meu cel iubit, întru Care am binevoit.' Astfel s-a descoperit Sfânta Treime."
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Cine L-a botezat pe Iisus?",
+          "choices": {
+            "a": "Apostolul Petru",
+            "b": "Ioan Botezătorul",
+            "c": "Proorocul Ilie"
+          }
+        },
+        "q2": {
+          "question": "Sub ce formă S-a arătat Duhul Sfânt la Botezul Domnului?",
+          "choices": {
+            "a": "Ca vultur",
+            "b": "Ca porumbel",
+            "c": "Ca flacără de foc"
+          }
+        },
+        "q3": {
+          "question": "Ce taină a Credinței ni se descoperă la Botezul Domnului?",
+          "choices": {
+            "a": "Învierea morților",
+            "b": "Sfânta Treime",
+            "c": "Sfânta Euharistie"
+          }
+        }
+      }
+    },
+    "zaheu-vamesul": {
+      "title": "Zaheu Vameșul",
+      "description": "Descoperă cum Zaheu, un vameș bogat, s-a întâlnit cu Iisus și s-a schimbat.",
+      "learn": {
+        "image_alt": "Icoana lui Zaheu în smochin"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Zaheu în smochin",
+          "body": "Zaheu era de statură mică și nu putea vedea prin mulțime, așa că s-a urcat într-un smochin pentru a-L vedea pe Iisus trecând."
+        },
+        "2": {
+          "title": "Întâlnirea cu Iisus",
+          "body": "Iisus S-a uitat în sus și i-a spus: 'Zahee, coboară degrabă, căci astăzi trebuie să rămân în casa ta.' Zaheu a coborât în grabă."
+        },
+        "3": {
+          "title": "Pocăința lui Zaheu",
+          "body": "Zaheu a stat înaintea Domnului și a zis: 'Iată, jumătate din averea mea o dau săracilor și, dacă am nedreptățit pe cineva, îi întorc împătrit.'"
+        },
+        "4": {
+          "title": "Mântuirea casei lui Zaheu",
+          "body": "Iisus a zis: 'Astăzi s-a făcut mântuire casei acesteia, căci și acesta este fiu al lui Avraam. Fiul Omului a venit să caute și să mântuiască ce era pierdut.'"
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "De ce s-a urcat Zaheu în smochin?",
+          "choices": {
+            "a": "Să culeagă fructe",
+            "b": "Să-L vadă pe Iisus",
+            "c": "Să se ascundă de mulțime"
+          }
+        },
+        "q2": {
+          "question": "Ce a promis Zaheu după întâlnirea cu Iisus?",
+          "choices": {
+            "a": "Să plece din cetate",
+            "b": "Să dea jumătate din avere săracilor și să întoarcă ce luase nedrept",
+            "c": "Să devină ucenic al lui Iisus"
+          }
+        },
+        "q3": {
+          "question": "Ce meserie avea Zaheu?",
+          "choices": {
+            "a": "Pescar",
+            "b": "Vameș (colector de taxe)",
+            "c": "Preot"
+          }
+        }
+      }
+    },
+    "pilda-samarineanului": {
+      "title": "Pilda Samarineanului Milostiv",
+      "description": "Descoperă pilda despre adevăratul aproapele nostru.",
+      "learn": {
+        "image_alt": "Icoana Samarineanului Milostiv"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Omul căzut între tâlhari",
+          "body": "Un om cobora de la Ierusalim la Ierihon și a căzut între tâlhari care l-au bătut, i-au luat totul și l-au lăsat pe jumătate mort."
+        },
+        "2": {
+          "title": "Preotul și Levitul",
+          "body": "Un preot și un levit, oameni ai Templului, au trecut pe acolo și au ocolit omul rănit fără să-l ajute."
+        },
+        "3": {
+          "title": "Samarineanul milostiv",
+          "body": "Un samarinean, deși samarinenii și iudeii nu se înțelegeau, când l-a văzut i s-a făcut milă. I-a pansat rănile, l-a pus pe asinul său și l-a dus la han."
+        },
+        "4": {
+          "title": "Hanul",
+          "body": "Samarineanul a plătit hangiului doi dinari, spunând: 'Îngrijește-l; și ce vei mai cheltui, eu când mă voi întoarce, îți voi da.' Aceasta este iubirea față de aproapele."
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Cine a ajutat omul rănit din pildă?",
+          "choices": {
+            "a": "Preotul",
+            "b": "Levitul",
+            "c": "Samarineanul"
+          }
+        },
+        "q2": {
+          "question": "Ce ne îndeamnă această pildă?",
+          "choices": {
+            "a": "Să evităm locurile periculoase",
+            "b": "Să iubim și să ajutăm pe oricine are nevoie",
+            "c": "Să mergem des la Templu"
+          }
+        },
+        "q3": {
+          "question": "Ce a făcut Samarineanul pentru omul rănit?",
+          "choices": {
+            "a": "L-a chemat pe preot să-l ajute",
+            "b": "I-a pansat rănile, l-a dus la han și a plătit pentru îngrijirea lui",
+            "c": "L-a lăsat în grija Levitului"
+          }
+        }
+      }
+    },
+    "fiul-risipitor": {
+      "title": "Pilda Fiului Risipitor",
+      "description": "Descoperă pilda despre iertarea tatălui și întoarcerea fiului risipitor.",
+      "learn": {
+        "image_alt": "Icoana Întoarcerii Fiului Risipitor"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Plecarea fiului cel mic",
+          "body": "Fiul cel mic a cerut tatălui partea sa de avere și a plecat într-o țară depărtată, unde a risipit totul în viață destrăbălată."
+        },
+        "2": {
+          "title": "Mizeria și pocăința",
+          "body": "Ajuns la sapă de lemn și plin de foame, fiul și-a venit în fire: 'Voi merge la tatăl meu și-i voi spune: am greșit la cer și înaintea ta.'"
+        },
+        "3": {
+          "title": "Întoarcerea",
+          "body": "Tatăl l-a văzut de departe, i s-a făcut milă, a alergat, l-a îmbrățișat și l-a sărutat. Aceasta arată iubirea nesfârșită a lui Dumnezeu față de noi."
+        },
+        "4": {
+          "title": "Ospățul și fiul cel mare",
+          "body": "Tatăl a dat un ospăț mare pentru întoarcerea fiului. Fiul cel mare s-a supărat, dar tatăl i-a explicat: 'Fratele tău era mort și a înviat.'"
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Ce a cerut fiul cel mic tatălui său?",
+          "choices": {
+            "a": "O casă nouă",
+            "b": "Partea sa de avere",
+            "c": "Să plece în călătorie cu tatăl"
+          }
+        },
+        "q2": {
+          "question": "Cum l-a primit tatăl pe fiul care s-a întors?",
+          "choices": {
+            "a": "Cu mânie și l-a pedepsit",
+            "b": "L-a primit ca pe un slugă",
+            "c": "Cu bucurie, l-a îmbrățișat și a dat ospăț"
+          }
+        },
+        "q3": {
+          "question": "Ce ne arată atitudinea tatălui în această pildă?",
+          "choices": {
+            "a": "Că trebuie să câștigăm iertarea prin fapte",
+            "b": "Iubirea și mila nesfârșită a lui Dumnezeu față de cei păcătoși care se pocăiesc",
+            "c": "Că bogăția este importantă"
+          }
+        }
+      }
+    },
+    "sf-andrei": {
+      "title": "Sfântul Apostol Andrei",
+      "description": "Descoperă viața Sfântului Andrei, ocrotitorul României.",
+      "learn": {
+        "image_alt": "Icoana Sfântului Apostol Andrei"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Chemarea lui Andrei",
+          "body": "Andrei era pescar pe Marea Galileii. Iisus i-a spus: 'Veniți după Mine și vă voi face pescari de oameni.' El L-a urmat imediat."
+        },
+        "2": {
+          "title": "Andrei — Cel Întâi Chemat",
+          "body": "Sfântul Andrei este primul chemat dintre apostoli. El l-a și adus pe fratele său Petru la Iisus, spunând: 'Am găsit pe Mesia!'"
+        },
+        "3": {
+          "title": "Crucea Sfântului Andrei",
+          "body": "Sfântul Andrei a murit pe o cruce în formă de X (cruce andreiană) în cetatea Patras, Grecia. A propovăduit în toată lumea."
+        },
+        "4": {
+          "title": "Ocrotitorul României",
+          "body": "Sfântul Andrei a propovăduit Evanghelia în ținuturile de la gurile Dunării și Dobrogea, devenind ocrotitorul poporului român."
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Ce meserie avusese Sfântul Andrei înainte de a fi apostol?",
+          "choices": {
+            "a": "Tâmplar",
+            "b": "Pescar",
+            "c": "Vameș"
+          }
+        },
+        "q2": {
+          "question": "Cum se numește crucea pe care a murit Sfântul Andrei?",
+          "choices": {
+            "a": "Crucea latină",
+            "b": "Crucea andreiană (în formă de X)",
+            "c": "Crucea ortodoxă cu trei brațe"
+          }
+        },
+        "q3": {
+          "question": "De ce este Sfântul Andrei ocrotitorul României?",
+          "choices": {
+            "a": "Pentru că s-a născut în România",
+            "b": "Pentru că a propovăduit Evanghelia pe teritoriul de azi al României",
+            "c": "Pentru că a murit la București"
+          }
+        }
+      }
+    }
+  }
+}

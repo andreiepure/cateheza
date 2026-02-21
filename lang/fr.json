@@ -1,0 +1,810 @@
+{
+  "site": {
+    "title": "Catéchèse Orthodoxe",
+    "tagline": "Jeux interactifs pour enfants"
+  },
+  "nav": {
+    "home": "Accueil",
+    "activities": "Activités",
+    "language": "Langue"
+  },
+  "landing": {
+    "welcome": "Bienvenue !",
+    "subtitle": "Choisissez votre langue pour commencer",
+    "choose_language": "Choisissez la langue",
+    "ro": "Roumain",
+    "fr": "Français",
+    "start": "Commencer"
+  },
+  "main": {
+    "title": "Activités",
+    "subtitle": "Choisissez une activité pour apprendre",
+    "start_activity": "Commencer l'activité",
+    "loading": "Chargement..."
+  },
+  "activity": {
+    "learn_phase": "Découvrir",
+    "quiz_phase": "Se tester",
+    "learn_title": "Explorez l'image",
+    "learn_instruction": "Appuyez sur les points colorés pour en savoir plus.",
+    "close": "Fermer",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "question": "Question",
+    "of": "sur",
+    "submit": "Envoyer",
+    "correct": "Correct !",
+    "incorrect": "Réessayez !",
+    "next_question": "Question suivante",
+    "finish": "Terminer",
+    "score": "Votre score",
+    "score_label": "bonnes réponses sur",
+    "retry": "Réessayer",
+    "back_to_activities": "Retour aux activités",
+    "phase_learn": "Apprendre",
+    "phase_quiz": "Quiz",
+    "start_quiz": "Commencer le quiz",
+    "slide_instruction": "Appuyez sur les flèches pour naviguer entre les images.",
+    "result_excellent": "Excellent ! Vous avez répondu correctement à toutes les questions !",
+    "result_good": "Bien ! Vous avez répondu correctement à la plupart des questions.",
+    "result_try_again": "Entraînez-vous encore ! Vous pouvez faire mieux."
+  },
+  "errors": {
+    "invalid_slug": "Activité inexistante.",
+    "invalid_lang": "Langue non supportée.",
+    "csrf_invalid": "La session a expiré. Veuillez réessayer.",
+    "rate_limit": "Trop de requêtes. Attendez un moment.",
+    "not_found": "Page introuvable.",
+    "server_error": "Une erreur est survenue. Veuillez réessayer."
+  },
+  "activities": {
+    "final-judgement": {
+      "title": "Le Jugement Dernier",
+      "description": "Découvrez ce que la foi orthodoxe enseigne sur le Jugement Dernier.",
+      "learn": {
+        "image_alt": "Icône du Jugement Dernier"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Jésus-Christ, le Juge",
+          "body": "Au Jugement Dernier, Jésus-Christ jugera toute l'humanité. Il viendra dans sa gloire et sa puissance céleste."
+        },
+        "2": {
+          "title": "Les Anges",
+          "body": "Les anges rassemblent les âmes devant le trône de Dieu et lui chantent gloire."
+        },
+        "3": {
+          "title": "Les Justes — Le Paradis",
+          "body": "Ceux qui ont vécu dans la foi et les bonnes œuvres héritent du Royaume des Cieux."
+        },
+        "4": {
+          "title": "Les condamnés",
+          "body": "Ceux qui ont refusé l'amour de Dieu et ne se sont pas repentis se séparent de Lui."
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Qui jugera l'humanité au Jugement Dernier ?",
+          "choices": {
+            "a": "Dieu le Père",
+            "b": "Jésus-Christ",
+            "c": "L'Archange Michel"
+          }
+        },
+        "q2": {
+          "question": "Que vont hériter les justes au Jugement Dernier ?",
+          "choices": {
+            "a": "Les richesses terrestres",
+            "b": "Le Royaume des Cieux",
+            "c": "Le pouvoir mondain"
+          }
+        },
+        "q3": {
+          "question": "Que nous invite à faire le Jugement Dernier dans cette vie ?",
+          "choices": {
+            "a": "Être riches",
+            "b": "Vivre dans la foi et les bonnes œuvres",
+            "c": "Avoir peur tout le temps"
+          }
+        }
+      },
+      "slides": {
+        "1": {
+          "image_alt": "Icône de Jésus-Christ",
+          "body": "Aujourd'hui nous allons parler de la façon dont Jésus, le Fils de Dieu, nous jugera selon la manière dont nous nous sommes comportés envers les autres."
+        },
+        "2": {
+          "image_alt": "Donner à manger à celui qui a faim",
+          "body": "«J'avais faim et vous m'avez donné à manger»"
+        },
+        "3": {
+          "image_alt": "Donner à boire à celui qui a soif",
+          "body": "«J'avais soif et vous m'avez donné à boire»"
+        },
+        "4": {
+          "image_alt": "Accueillir l'étranger",
+          "body": "«J'étais étranger et vous m'avez accueilli»"
+        },
+        "5": {
+          "image_alt": "Vêtir celui qui était nu",
+          "body": "«J'étais nu et vous m'avez vêtu»"
+        },
+        "6": {
+          "image_alt": "Visiter le malade",
+          "body": "«J'étais malade et vous m'avez visité»"
+        },
+        "7": {
+          "image_alt": "Visiter le prisonnier",
+          "body": "«J'étais en prison et vous êtes venus vers moi»"
+        },
+        "8": {
+          "image_alt": "Icône de Jésus-Christ",
+          "body": "☝️ Quand nous faisons du bien à un homme, nous faisons du bien à Dieu !"
+        }
+      }
+    },
+    "intampinarea-domnului": {
+      "title": "La Présentation au Temple",
+      "description": "Découvrez l'histoire de la présentation de l'Enfant Jésus au Temple de Jérusalem.",
+      "learn": {
+        "image_alt": "Icône de la Présentation au Temple"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Le juste Syméon",
+          "body": "Le vieillard Syméon avait attendu toute sa vie de voir le Sauveur. L'Esprit Saint lui avait promis qu'il ne mourrait pas avant d'avoir vu le Christ."
+        },
+        "2": {
+          "title": "La prophétesse Anne",
+          "body": "Anne, prophétesse âgée, servait dans le Temple nuit et jour par le jeûne et la prière. Elle annonça à tous que le Sauveur était venu."
+        },
+        "3": {
+          "title": "La Mère de Dieu et l'Enfant Jésus",
+          "body": "La Vierge Marie et Joseph présentèrent l'Enfant Jésus au Temple selon la Loi de Moïse, quarante jours après sa naissance."
+        },
+        "4": {
+          "title": "Le Temple de Jérusalem",
+          "body": "Le Temple était le lieu saint de Dieu. C'est là que le peuple d'Israël offrait des sacrifices et des prières."
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Comment s'appelait le vieillard qui reçut Jésus au Temple ?",
+          "choices": {
+            "a": "Joseph",
+            "b": "Syméon",
+            "c": "Zacharie"
+          }
+        },
+        "q2": {
+          "question": "Que dit Syméon de Jésus ?",
+          "choices": {
+            "a": "Qu'il sera un grand roi",
+            "b": "Qu'il est la lumière pour éclairer les nations",
+            "c": "Qu'il sera prêtre au Temple"
+          }
+        },
+        "q3": {
+          "question": "Combien de jours après sa naissance Jésus fut-il présenté au Temple ?",
+          "choices": {
+            "a": "7 jours",
+            "b": "40 jours",
+            "c": "Un an"
+          }
+        }
+      }
+    },
+    "ce-este-biserica": {
+      "title": "Qu'est-ce que l'Église ?",
+      "description": "Découvrez les parties de l'église orthodoxe et leur signification spirituelle.",
+      "learn": {
+        "image_alt": "Plan d'une église orthodoxe"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Le sanctuaire (autel)",
+          "body": "Le sanctuaire est le lieu le plus sacré de l'église, où est célébrée la Divine Liturgie. L'autel (sainte table) s'y trouve, où est offert le Sacrifice eucharistique."
+        },
+        "2": {
+          "title": "L'iconostase",
+          "body": "L'iconostase est le mur d'icônes qui sépare le sanctuaire de la nef. Par les Portes Royales, le prêtre sort vers les fidèles avec les Saints Mystères."
+        },
+        "3": {
+          "title": "La nef",
+          "body": "La nef est l'endroit où se tiennent les fidèles pendant les offices. Les hommes se tiennent généralement à droite, les femmes à gauche."
+        },
+        "4": {
+          "title": "Le narthex",
+          "body": "Le narthex est l'entrée de l'église, là où autrefois se tenaient ceux qui se préparaient au Baptême."
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Où est célébrée la Divine Liturgie dans l'église ?",
+          "choices": {
+            "a": "Dans la nef",
+            "b": "Dans le sanctuaire",
+            "c": "Dans le narthex"
+          }
+        },
+        "q2": {
+          "question": "Qu'est-ce que l'iconostase ?",
+          "choices": {
+            "a": "Un grand lustre",
+            "b": "Le mur d'icônes entre le sanctuaire et la nef",
+            "c": "La cloche de l'église"
+          }
+        },
+        "q3": {
+          "question": "Où se tiennent les fidèles pendant l'office ?",
+          "choices": {
+            "a": "Dans le sanctuaire",
+            "b": "Dans la nef",
+            "c": "Sur les marches"
+          }
+        }
+      }
+    },
+    "pilda-semanatorului": {
+      "title": "La Parabole du Semeur",
+      "description": "Comprenez la parabole racontée par Jésus sur le semeur et les différents types de terre.",
+      "learn": {
+        "image_alt": "Icône de la Parabole du Semeur"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Le Semeur",
+          "body": "Le semeur représente Jésus-Christ ou tout prédicateur de la Parole de Dieu."
+        },
+        "2": {
+          "title": "La semence sur le chemin",
+          "body": "La semence tombée sur le chemin représente celui qui entend la Parole, mais le diable vient et enlève ce qui a été semé dans son cœur."
+        },
+        "3": {
+          "title": "La semence sur le roc",
+          "body": "La semence sur le roc signifie celui qui reçoit la Parole avec joie, mais n'a pas de racines profondes et tombe à la première tentation."
+        },
+        "4": {
+          "title": "La bonne terre",
+          "body": "La bonne terre est le cœur qui entend, comprend et garde la Parole de Dieu, portant du fruit au centuple."
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Que représente la semence dans la parabole du semeur ?",
+          "choices": {
+            "a": "Le blé pour manger",
+            "b": "La Parole de Dieu",
+            "c": "Les bonnes œuvres"
+          }
+        },
+        "q2": {
+          "question": "Que représente la bonne terre ?",
+          "choices": {
+            "a": "Un champ fertile",
+            "b": "Le cœur qui reçoit et garde la Parole de Dieu",
+            "c": "Un beau jardin"
+          }
+        },
+        "q3": {
+          "question": "Pourquoi la semence ne pousse-t-elle pas sur le roc ?",
+          "choices": {
+            "a": "Parce qu'il n'y a pas d'eau",
+            "b": "Parce qu'elle n'a pas de racines profondes et se dessèche",
+            "c": "Parce que le vent arrive"
+          }
+        }
+      }
+    },
+    "saint-nektarios": {
+      "title": "Saint Nectaire d'Égine",
+      "description": "Découvrez la vie et les miracles de saint Nectaire, le thaumaturge.",
+      "learn": {
+        "image_alt": "Icône de saint Nectaire d'Égine"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Saint Nectaire",
+          "body": "Saint Nectaire (1846–1920) fut métropolite et fonda un monastère sur l'île d'Égine. Il est vénéré comme grand thaumaturge."
+        },
+        "2": {
+          "title": "Le monastère d'Égine",
+          "body": "Saint Nectaire construisit le monastère de la Sainte-Trinité sur l'île d'Égine, en Grèce, où il passa ses dernières années."
+        },
+        "3": {
+          "title": "Les guérisons miraculeuses",
+          "body": "Saint Nectaire est connu pour de nombreuses guérisons accomplies, de son vivant et après sa mort, par la prière des fidèles."
+        },
+        "4": {
+          "title": "Les reliques du saint",
+          "body": "Les reliques de saint Nectaire sont conservées au monastère d'Égine et exsudent du myrrhe, apportant la guérison à ceux qui les vénèrent avec foi."
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Sur quelle île vécut saint Nectaire ?",
+          "choices": {
+            "a": "La Crète",
+            "b": "Égine",
+            "c": "Chypre"
+          }
+        },
+        "q2": {
+          "question": "Pour quoi saint Nectaire est-il particulièrement connu ?",
+          "choices": {
+            "a": "Comme grand écrivain",
+            "b": "Comme thaumaturge et faiseur de miracles",
+            "c": "Comme général chrétien"
+          }
+        },
+        "q3": {
+          "question": "À quelle époque vécut saint Nectaire ?",
+          "choices": {
+            "a": "Au IVe siècle",
+            "b": "Au XVe siècle",
+            "c": "Aux XIXe–XXe siècles"
+          }
+        }
+      }
+    },
+    "sfintii-arhangheli": {
+      "title": "Les Saints Archanges",
+      "description": "Apprenez à connaître les archanges de Dieu — Michel, Gabriel et Raphaël.",
+      "learn": {
+        "image_alt": "Icône des Saints Archanges"
+      },
+      "hotspots": {
+        "1": {
+          "title": "L'Archange Michel",
+          "body": "Michel signifie « Qui est comme Dieu ? ». Il est le chef des armées célestes et le défenseur des fidèles contre les forces du mal."
+        },
+        "2": {
+          "title": "L'Archange Gabriel",
+          "body": "Gabriel signifie « La puissance de Dieu ». Il est le messager de la volonté divine et a apporté l'Annonciation à la Vierge Marie."
+        },
+        "3": {
+          "title": "L'Archange Raphaël",
+          "body": "Raphaël signifie « La guérison de Dieu ». Il est le protecteur des voyageurs et le guérisseur, connu du livre de Tobie."
+        },
+        "4": {
+          "title": "Les chœurs angéliques",
+          "body": "Les anges sont des êtres spirituels créés par Dieu. Ils Le glorifient sans cesse et sont les messagers et protecteurs des hommes."
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Quel archange annonça à la Vierge Marie qu'elle enfanterait le Fils de Dieu ?",
+          "choices": {
+            "a": "Michel",
+            "b": "Gabriel",
+            "c": "Raphaël"
+          }
+        },
+        "q2": {
+          "question": "Que signifie le nom de l'archange Michel ?",
+          "choices": {
+            "a": "La puissance de Dieu",
+            "b": "Qui est comme Dieu ?",
+            "c": "La guérison de Dieu"
+          }
+        },
+        "q3": {
+          "question": "Que sont les anges ?",
+          "choices": {
+            "a": "Des hommes parfaits",
+            "b": "Des êtres spirituels créés par Dieu",
+            "c": "Les âmes des saints"
+          }
+        }
+      }
+    },
+    "sfanta-parascheva": {
+      "title": "Sainte Paraschève",
+      "description": "Découvrez la vie de sainte Paraschève, protectrice de la Moldavie.",
+      "learn": {
+        "image_alt": "Icône de sainte Paraschève"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Sainte Paraschève",
+          "body": "Sainte Paraschève vécut au XIe siècle en Thrace (Balkans). Dès son jeune âge, elle choisit la vie d'ascèse et de prière, renonçant aux richesses de sa famille."
+        },
+        "2": {
+          "title": "Les reliques à Iași",
+          "body": "Les reliques de sainte Paraschève sont conservées à la Cathédrale Métropolitaine de Iași et vénérées par des millions de pèlerins chaque année."
+        },
+        "3": {
+          "title": "Le pèlerinage à Iași",
+          "body": "Le 14 octobre, jour de la fête de la sainte, des dizaines de milliers de fidèles viennent à Iași se prosterner devant ses reliques et demander son intercession."
+        },
+        "4": {
+          "title": "La vie ascétique",
+          "body": "Sainte Paraschève vécut une vie de jeûne, de prière et d'aumônes. Elle aida les pauvres et servit Dieu de tout son cœur."
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Où sont conservées les reliques de sainte Paraschève ?",
+          "choices": {
+            "a": "À Bucarest",
+            "b": "À Iași",
+            "c": "À Cluj-Napoca"
+          }
+        },
+        "q2": {
+          "question": "D'où était sainte Paraschève ?",
+          "choices": {
+            "a": "De Moldavie",
+            "b": "De Thrace (Balkans)",
+            "c": "De France"
+          }
+        },
+        "q3": {
+          "question": "Quand est la fête de sainte Paraschève ?",
+          "choices": {
+            "a": "Le 14 octobre",
+            "b": "Le 25 décembre",
+            "c": "Le 1er janvier"
+          }
+        }
+      }
+    },
+    "sf-dimitrie": {
+      "title": "Saint Démétrios le Myrobulite",
+      "description": "Découvrez la vie martyrique de saint Démétrios de Thessalonique.",
+      "learn": {
+        "image_alt": "Icône de saint Démétrios le Myrobulite"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Saint Démétrios",
+          "body": "Saint Démétrios vécut au IVe siècle à Thessalonique. Il fut soldat chrétien et prédicateur de la foi, pour laquelle il souffrit le martyre."
+        },
+        "2": {
+          "title": "La cité de Thessalonique",
+          "body": "Saint Démétrios est le protecteur de la ville de Thessalonique (Salonique) en Grèce. Il a défendu la cité maintes fois par ses intercessions miraculeuses."
+        },
+        "3": {
+          "title": "Le saint myrrhe",
+          "body": "Les reliques de saint Démétrios exsudent du saint myrrhe qui a la puissance de guérir. C'est pourquoi il est surnommé « le Myrobulite »."
+        },
+        "4": {
+          "title": "Le martyre",
+          "body": "Saint Démétrios fut mis à mort sur l'ordre de l'empereur Maximien parce qu'il était chrétien et prêchait la foi."
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "De quelle ville était saint Démétrios ?",
+          "choices": {
+            "a": "Athènes",
+            "b": "Thessalonique",
+            "c": "Constantinople"
+          }
+        },
+        "q2": {
+          "question": "Pourquoi est-il appelé « le Myrobulite » ?",
+          "choices": {
+            "a": "Parce qu'il produisait de l'huile d'olive",
+            "b": "Parce que ses reliques exsudent du saint myrrhe guérisseur",
+            "c": "Parce qu'il était parfumeur"
+          }
+        },
+        "q3": {
+          "question": "À quelle époque vécut saint Démétrios ?",
+          "choices": {
+            "a": "Au IIe siècle",
+            "b": "Au IVe siècle",
+            "c": "Au Xe siècle"
+          }
+        }
+      }
+    },
+    "bogatul-nemilostic": {
+      "title": "Le Riche et Lazare",
+      "description": "Comprenez la parabole sur le riche sans pitié et le pauvre Lazare.",
+      "learn": {
+        "image_alt": "Icône de la Parabole du Riche et de Lazare"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Le riche",
+          "body": "Le riche s'habillait de pourpre et de fin lin et faisait chaque jour bonne chère. Il ne s'est pas soucié du pauvre Lazare à sa porte."
+        },
+        "2": {
+          "title": "Lazare le pauvre",
+          "body": "Lazare gisait à la porte du riche, couvert d'ulcères, désirant se rassasier des miettes qui tombaient de sa table."
+        },
+        "3": {
+          "title": "Le sein d'Abraham",
+          "body": "Après sa mort, Lazare fut emporté par les anges dans le sein d'Abraham — le lieu de repos des justes, plein de consolation et de paix."
+        },
+        "4": {
+          "title": "L'abîme",
+          "body": "Entre le riche en enfer et Lazare dans le sein d'Abraham il y avait un grand abîme, signe que le sort des âmes se décide dans cette vie."
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Comment Lazare vécut-il sur terre ?",
+          "choices": {
+            "a": "Dans la richesse et le bonheur",
+            "b": "Dans la pauvreté et la souffrance",
+            "c": "Comme prêtre au Temple"
+          }
+        },
+        "q2": {
+          "question": "Où arriva Lazare après sa mort ?",
+          "choices": {
+            "a": "En enfer",
+            "b": "Dans le sein d'Abraham",
+            "c": "Sur une haute montagne"
+          }
+        },
+        "q3": {
+          "question": "Que nous enseigne cette parabole ?",
+          "choices": {
+            "a": "Que la richesse est toujours un péché",
+            "b": "Que l'aumône et le souci du prochain sont essentiels",
+            "c": "Que tous les hommes souffriront"
+          }
+        }
+      }
+    },
+    "botezul-domnului": {
+      "title": "Le Baptême du Seigneur",
+      "description": "Découvrez l'événement du baptême de Jésus dans le Jourdain par Jean.",
+      "learn": {
+        "image_alt": "Icône du Baptême du Seigneur (Théophanie)"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Jésus dans le Jourdain",
+          "body": "Jésus vint de Galilée au Jourdain, vers Jean, pour être baptisé par lui. Jean s'y opposa, disant que c'est lui qui avait besoin d'être baptisé par Jésus."
+        },
+        "2": {
+          "title": "Jean le Baptiste",
+          "body": "Jean le Baptiste prêchait la repentance et baptisait les gens dans le Jourdain. Il prépara la voie à la venue du Messie."
+        },
+        "3": {
+          "title": "L'Esprit Saint comme colombe",
+          "body": "Quand Jésus sortit de l'eau, le ciel s'ouvrit et l'Esprit de Dieu descendit comme une colombe et se posa sur lui."
+        },
+        "4": {
+          "title": "La voix du Père",
+          "body": "Une voix du ciel dit : « Celui-ci est mon Fils bien-aimé, en qui j'ai mis toute mon affection. » Ainsi fut révélée la Sainte Trinité."
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Qui baptisa Jésus ?",
+          "choices": {
+            "a": "L'apôtre Pierre",
+            "b": "Jean le Baptiste",
+            "c": "Le prophète Élie"
+          }
+        },
+        "q2": {
+          "question": "Sous quelle forme l'Esprit Saint apparut-il au Baptême du Seigneur ?",
+          "choices": {
+            "a": "Comme un aigle",
+            "b": "Comme une colombe",
+            "c": "Comme une flamme de feu"
+          }
+        },
+        "q3": {
+          "question": "Quel mystère de la Foi nous est révélé au Baptême du Seigneur ?",
+          "choices": {
+            "a": "La Résurrection des morts",
+            "b": "La Sainte Trinité",
+            "c": "La Sainte Eucharistie"
+          }
+        }
+      }
+    },
+    "zaheu-vamesul": {
+      "title": "Zachée le Publicain",
+      "description": "Découvrez comment Zachée, un riche publicain, rencontra Jésus et fut transformé.",
+      "learn": {
+        "image_alt": "Icône de Zachée dans le sycomore"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Zachée dans le sycomore",
+          "body": "Zachée était de petite taille et ne pouvait pas voir à travers la foule, alors il grimpa dans un sycomore pour voir Jésus passer."
+        },
+        "2": {
+          "title": "La rencontre avec Jésus",
+          "body": "Jésus leva les yeux et lui dit : « Zachée, descends vite, car il faut que je loge aujourd'hui dans ta maison. » Zachée descendit en hâte."
+        },
+        "3": {
+          "title": "La repentance de Zachée",
+          "body": "Zachée se tint devant le Seigneur et dit : « Voici, Seigneur, je donne la moitié de mes biens aux pauvres ; et si j'ai fait quelque tort à quelqu'un, je lui rends le quadruple. »"
+        },
+        "4": {
+          "title": "Le salut de la maison de Zachée",
+          "body": "Jésus dit : « Aujourd'hui, le salut est entré dans cette maison, parce que celui-ci est aussi un fils d'Abraham. Car le Fils de l'homme est venu chercher et sauver ce qui était perdu. »"
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Pourquoi Zachée grimpa-t-il dans le sycomore ?",
+          "choices": {
+            "a": "Pour cueillir des fruits",
+            "b": "Pour voir Jésus",
+            "c": "Pour se cacher de la foule"
+          }
+        },
+        "q2": {
+          "question": "Que promit Zachée après sa rencontre avec Jésus ?",
+          "choices": {
+            "a": "De quitter la ville",
+            "b": "De donner la moitié de ses biens aux pauvres et de rendre au quadruple ce qu'il avait pris injustement",
+            "c": "De devenir disciple de Jésus"
+          }
+        },
+        "q3": {
+          "question": "Quel était le métier de Zachée ?",
+          "choices": {
+            "a": "Pêcheur",
+            "b": "Publicain (collecteur d'impôts)",
+            "c": "Prêtre"
+          }
+        }
+      }
+    },
+    "pilda-samarineanului": {
+      "title": "La Parabole du Bon Samaritain",
+      "description": "Découvrez la parabole sur notre véritable prochain.",
+      "learn": {
+        "image_alt": "Icône du Bon Samaritain"
+      },
+      "hotspots": {
+        "1": {
+          "title": "L'homme tombé entre des brigands",
+          "body": "Un homme descendait de Jérusalem à Jéricho et tomba entre des brigands qui le battirent, lui prirent tout et le laissèrent à demi mort."
+        },
+        "2": {
+          "title": "Le prêtre et le lévite",
+          "body": "Un prêtre et un lévite, gens du Temple, passèrent par là et évitèrent l'homme blessé sans l'aider."
+        },
+        "3": {
+          "title": "Le Samaritain compatissant",
+          "body": "Un Samaritain, bien que Samaritains et Juifs ne s'entendaient pas, quand il le vit, fut ému de compassion. Il banda ses plaies, le mit sur son âne et l'amena à l'auberge."
+        },
+        "4": {
+          "title": "L'auberge",
+          "body": "Le Samaritain paya l'hôtelier deux deniers en disant : « Prends soin de lui ; et ce que tu dépenseras de plus, je te le rendrai à mon retour. » C'est l'amour du prochain."
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Qui aida l'homme blessé dans la parabole ?",
+          "choices": {
+            "a": "Le prêtre",
+            "b": "Le lévite",
+            "c": "Le Samaritain"
+          }
+        },
+        "q2": {
+          "question": "À quoi nous invite cette parabole ?",
+          "choices": {
+            "a": "À éviter les endroits dangereux",
+            "b": "À aimer et aider quiconque est dans le besoin",
+            "c": "À aller souvent au Temple"
+          }
+        },
+        "q3": {
+          "question": "Que fit le Samaritain pour l'homme blessé ?",
+          "choices": {
+            "a": "Il appela un prêtre pour l'aider",
+            "b": "Il banda ses plaies, l'emmena à l'auberge et paya pour ses soins",
+            "c": "Il le laissa aux soins du lévite"
+          }
+        }
+      }
+    },
+    "fiul-risipitor": {
+      "title": "La Parabole du Fils Prodigue",
+      "description": "Découvrez la parabole sur le pardon du père et le retour du fils prodigue.",
+      "learn": {
+        "image_alt": "Icône du Retour du Fils Prodigue"
+      },
+      "hotspots": {
+        "1": {
+          "title": "Le départ du fils cadet",
+          "body": "Le fils cadet demanda à son père sa part de fortune et s'en alla dans un pays lointain, où il dissipa tout dans une vie dissolue."
+        },
+        "2": {
+          "title": "La misère et le repentir",
+          "body": "Réduit à la misère et affamé, le fils revint à lui-même : « Je me lèverai, et j'irai vers mon père, et je lui dirai : j'ai péché contre le ciel et contre toi. »"
+        },
+        "3": {
+          "title": "Le retour",
+          "body": "Le père le vit de loin, fut ému de compassion, courut, le serra dans ses bras et l'embrassa. Cela montre l'amour infini de Dieu envers nous."
+        },
+        "4": {
+          "title": "Le festin et le fils aîné",
+          "body": "Le père donna un grand festin pour le retour du fils. Le fils aîné se fâcha, mais le père lui expliqua : « Ton frère que voilà était mort, et il est revenu à la vie. »"
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Que demanda le fils cadet à son père ?",
+          "choices": {
+            "a": "Une nouvelle maison",
+            "b": "Sa part de fortune",
+            "c": "De partir en voyage avec son père"
+          }
+        },
+        "q2": {
+          "question": "Comment le père accueillit-il le fils qui revenait ?",
+          "choices": {
+            "a": "Avec colère et le punit",
+            "b": "Il l'accueillit comme un serviteur",
+            "c": "Avec joie, il l'embrassa et donna un festin"
+          }
+        },
+        "q3": {
+          "question": "Que nous montre l'attitude du père dans cette parabole ?",
+          "choices": {
+            "a": "Que nous devons mériter le pardon par nos œuvres",
+            "b": "L'amour et la miséricorde infinis de Dieu envers les pécheurs repentants",
+            "c": "Que la richesse est importante"
+          }
+        }
+      }
+    },
+    "sf-andrei": {
+      "title": "Saint André l'Apôtre",
+      "description": "Découvrez la vie de saint André, protecteur de la Roumanie.",
+      "learn": {
+        "image_alt": "Icône de saint André l'Apôtre"
+      },
+      "hotspots": {
+        "1": {
+          "title": "L'appel d'André",
+          "body": "André était pêcheur sur la mer de Galilée. Jésus lui dit : « Venez après moi, et je vous ferai pêcheurs d'hommes. » Il le suivit immédiatement."
+        },
+        "2": {
+          "title": "André — Le Premier Appelé",
+          "body": "Saint André est le premier apôtre appelé. Il amena aussi son frère Pierre à Jésus en disant : « Nous avons trouvé le Messie ! »"
+        },
+        "3": {
+          "title": "La Croix de saint André",
+          "body": "Saint André mourut sur une croix en forme de X (croix de Saint-André) dans la ville de Patras, en Grèce. Il prêcha dans le monde entier."
+        },
+        "4": {
+          "title": "Le protecteur de la Roumanie",
+          "body": "Saint André prêcha l'Évangile dans les régions des bouches du Danube et de la Dobroudja, devenant ainsi le protecteur du peuple roumain."
+        }
+      },
+      "quiz": {
+        "q1": {
+          "question": "Quel métier saint André exerçait-il avant d'être apôtre ?",
+          "choices": {
+            "a": "Charpentier",
+            "b": "Pêcheur",
+            "c": "Publicain"
+          }
+        },
+        "q2": {
+          "question": "Comment s'appelle la croix sur laquelle mourut saint André ?",
+          "choices": {
+            "a": "La croix latine",
+            "b": "La croix de Saint-André (en forme de X)",
+            "c": "La croix orthodoxe à trois barres"
+          }
+        },
+        "q3": {
+          "question": "Pourquoi saint André est-il le protecteur de la Roumanie ?",
+          "choices": {
+            "a": "Parce qu'il est né en Roumanie",
+            "b": "Parce qu'il prêcha l'Évangile sur le territoire actuel de la Roumanie",
+            "c": "Parce qu'il mourut à Bucarest"
+          }
+        }
+      }
+    }
+  }
+}

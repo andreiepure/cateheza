@@ -1,0 +1,53 @@
+{
+  "type": "slides",
+  "slides": [
+    {
+      "id": "slide-1",
+      "image": "assets/images/activities/final-judgement/iisus.jpg",
+      "image_alt_key": "activities.final-judgement.slides.1.image_alt",
+      "body_key": "activities.final-judgement.slides.1.body"
+    },
+    {
+      "id": "slide-2",
+      "image": "assets/images/activities/final-judgement/food.jpg",
+      "image_alt_key": "activities.final-judgement.slides.2.image_alt",
+      "body_key": "activities.final-judgement.slides.2.body"
+    },
+    {
+      "id": "slide-3",
+      "image": "assets/images/activities/final-judgement/water.jpg",
+      "image_alt_key": "activities.final-judgement.slides.3.image_alt",
+      "body_key": "activities.final-judgement.slides.3.body"
+    },
+    {
+      "id": "slide-4",
+      "image": "assets/images/activities/final-judgement/welcome-refugee.jpg",
+      "image_alt_key": "activities.final-judgement.slides.4.image_alt",
+      "body_key": "activities.final-judgement.slides.4.body"
+    },
+    {
+      "id": "slide-5",
+      "image": "assets/images/activities/final-judgement/donate-clothes.jpg",
+      "image_alt_key": "activities.final-judgement.slides.5.image_alt",
+      "body_key": "activities.final-judgement.slides.5.body"
+    },
+    {
+      "id": "slide-6",
+      "image": "assets/images/activities/final-judgement/hospital-visit.jpg",
+      "image_alt_key": "activities.final-judgement.slides.6.image_alt",
+      "body_key": "activities.final-judgement.slides.6.body"
+    },
+    {
+      "id": "slide-7",
+      "image": "assets/images/activities/final-judgement/visit-prison.jpg",
+      "image_alt_key": "activities.final-judgement.slides.7.image_alt",
+      "body_key": "activities.final-judgement.slides.7.body"
+    },
+    {
+      "id": "slide-8",
+      "image": "assets/images/activities/final-judgement/iisus.jpg",
+      "image_alt_key": "activities.final-judgement.slides.8.image_alt",
+      "body_key": "activities.final-judgement.slides.8.body"
+    }
+  ]
+}

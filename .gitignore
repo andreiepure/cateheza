@@ -1,0 +1,27 @@
+# Local configuration (contains secrets / environment-specific settings)
+config/config.php
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# PHP logs
+*.log
+
+# Composer (not used, but just in case)
+vendor/
+composer.lock
+
+# Node (not used, but just in case)
+node_modules/
+
+# Deployment artifacts
+*.zip
+*.tar.gz
